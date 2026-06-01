@@ -1,0 +1,48 @@
+name: BookStore CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  backend:
+    name: Build Backend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore backend dependencies
+        run: dotnet restore Backend/BookStore.Api/BookStore.Api.csproj
+
+      - name: Build backend
+        run: dotnet build Backend/BookStore.Api/BookStore.Api.csproj --configuration Release --no-restore
+
+  frontend:
+    name: Build Frontend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install frontend dependencies
+        working-directory: Frontend/book-store-client
+        run: npm install
+
+      - name: Build frontend
+        working-directory: Frontend/book-store-client
+        run: npm run build
