@@ -1,0 +1,1017 @@
+{
+  "common": {
+    "refresh": "Làm mới",
+    "apply": "Áp dụng",
+    "deleteAll": "Xóa tất cả",
+    "payment": "Thanh toán",
+    "stock": "Tồn",
+    "logout": "Đăng xuất",
+    "confirmTitle": "Xác nhận",
+    "confirmMessage": "Bạn có chắc chắn muốn thực hiện thao tác này không?",
+    "confirm": "Xác nhận",
+    "cancel": "Hủy bỏ"
+  },
+  "staff": {
+    "brand": "Book-Store Staff",
+    "expandSidebar": "Mở rộng sidebar",
+    "collapseSidebar": "Thu gọn sidebar",
+    "avatarAlt": "Ảnh đại diện",
+    "online": "Đang online",
+    "logoutSuccess": "Đã đăng xuất thành công khỏi hệ thống!",
+    "logoutConfirmMessage": "Bạn có chắc chắn muốn đăng xuất khỏi hệ thống Book-Store Staff không?",
+    "menu": {
+      "pos": "Bán hàng tại quầy",
+      "orders": "Quản lý đơn hàng",
+      "products": "Quản lý sản phẩm",
+      "customers": "Quản lý khách hàng",
+      "returns": "Quản lý đổi trả",
+      "shift": "Quản lý ca làm & thu chi",
+      "reports": "Báo cáo ca làm",
+      "promotions": "Quản lý khuyến mãi",
+      "loyalty": "Quản lý tích điểm",
+      "profile": "Thông tin cá nhân"
+    }
+  },
+  "pos": {
+    
+    "loyaltyPointAdded": "Đã cộng 1 điểm tích lũy cho khách hàng.",
+    "loyaltyPointAddFailed": "Thanh toán thành công nhưng chưa cộng được điểm tích lũy.",
+    "couponAppliedAlert": "Đã áp dụng mã {{code}}, giảm {{percent}}%.",
+    "couponInactiveAlert": "Mã khuyến mãi chưa được kích hoạt.",
+    "couponUpcomingAlert": "Mã khuyến mãi chưa đến ngày sử dụng.",
+    "couponExpiredAlert": "Mã khuyến mãi đã hết hạn.",
+    "loadErrorAlert": "Lỗi tải dữ liệu: {{message}}",
+    "checkoutErrorAlert": "Lỗi hoàn tất thanh toán: {{message}}",
+    "paymentErrorAlert": "Lỗi thanh toán: {{message}}",
+    "foundMemberAlert": "Đã tìm thấy khách hàng thành viên: {{name}}",
+    "scannedButNotFoundAlert": "Quét mã [{{barcode}}] thành công nhưng không tìm thấy sản phẩm.",
+    "searchPlaceholder": "Tìm tên, tác giả, mã vạch...",
+    "scanBarcode": "Quét mã vạch",
+    "loading": "Đang tải...",
+    "loadingFromDb": "Đang tải sản phẩm từ cơ sở dữ liệu...",
+    "noProductsFound": "Không tìm thấy sản phẩm phù hợp.",
+    "all": "Tất cả",
+    "categories": {
+      "books": "Sách",
+      "stationery": "Văn phòng phẩm",
+      "toys": "Đồ chơi",
+      "accessories": "Phụ kiện",
+      "schoolSupplies": "Đồ dùng học tập",
+      "souvenirs": "Quà lưu niệm"
+    },
+    "paymentMethods": {
+      "cash": "Tiền mặt",
+      "bank": "Chuyển khoản",
+      "card": "Thẻ",
+      "wallet": "Ví điện tử"
+    },
+    "orderProducts": "Sản phẩm trong đơn",
+    "itemsLines": "dòng sản phẩm",
+    "itemsCount": "món",
+    "cartEmptyTitle": "Giỏ hàng đang trống",
+    "cartEmptyDesc": "Chọn sản phẩm ở danh sách phía trên hoặc quét mã vạch.",
+    "codeLabel": "Mã:",
+    "outOfStock": "Hết",
+    "paymentTitle": "Thanh toán",
+    "selling": "Đang bán",
+    "noOrder": "Chưa có đơn",
+    "customerPhone": "Số điện thoại khách hàng",
+    "phonePlaceholder": "Nhập SĐT...",
+    "customerName": "Họ và tên khách hàng",
+    "namePlaceholder": "Nhập tên khách hàng...",
+    "retailCustomer": "Khách lẻ",
+    "couponPlaceholder": "Mã khuyến mãi: SALE10, SALE20",
+    "subtotal": "Tổng tiền hàng",
+    "discountType": "Loại giảm",
+    "discountAmount": "Số tiền",
+    "discountPercent": "Phần trăm",
+    "discountValue": "Giảm giá",
+    "discounted": "Đã giảm",
+    "totalPayment": "Tổng thanh toán",
+    "paymentMethod": "Phương thức thanh toán",
+    "customerPaid": "Khách đưa",
+    "customerPaidPlaceholder": "Tiền khách đưa",
+    "change": "Tiền dư",
+    "notes": "Ghi chú",
+    "notesPlaceholder": "Khách lấy hóa đơn...",
+    "processing": "Đang xử lý...",
+    "saveDraft": "Lưu đơn tạm",
+    "draftOrders": "Đơn tạm",
+    "noDraftOrders": "Chưa có đơn tạm.",
+    "open": "Mở",
+    "delete": "Xóa",
+    "outOfStockAlert": "Sản phẩm đã hết hàng.",
+    "stockMaxAlert": "Số lượng trong đơn đã đạt tồn kho tối đa.",
+    "exceedStockAlert": "Không thể vượt quá tồn kho.",
+    "enterCouponAlert": "Vui lòng nhập mã.",
+    "couponPercentAlert": "Giảm 10%.",
+    "couponAmountAlert": "Giảm 50k.",
+    "invalidCouponAlert": "Mã không hợp lệ.",
+    "noProductsInCartAlert": "Không có sản phẩm.",
+    "savedDraftAlert": "Đã lưu đơn tạm.",
+    "loadedDraftAlert": "Đã mở lại đơn tạm.",
+    "notEnoughPaidAlert": "Tiền khách đưa chưa đủ.",
+    "savedNewCustomerAlert": "Đã lưu thông tin khách hàng mới vào hệ thống.",
+    "barcodeNotFoundAlert": "Không tìm thấy mã vạch sản phẩm.",
+    "noCameraFound": "Không truy cập được camera. Bạn có thể sử dụng mô phỏng hoặc nhập mã.",
+    "scanToPay": "QUÉT MÃ THANH TOÁN",
+    "confirmReceived": "Xác nhận đã nhận tiền",
+    "close": "Đóng",
+    "address": "Số 1 Xa lộ Hà Nội, Tăng Nhơn Phú, Hồ Chí Minh",
+    "salesInvoice": "HÓA ĐƠN BÁN HÀNG",
+    "staff": "Nhân viên",
+    "staffNameLabel": "Tên nhân viên:",
+    "invoiceIdLabel": "Mã hóa đơn:",
+    "invoiceDateLabel": "Ngày lập hóa đơn:",
+    "customerNameLabel": "Tên khách hàng:",
+    "productNameCol": "Tên sản phẩm",
+    "qtyCol": "Số lượng",
+    "totalCol": "Tổng tiền",
+    "subtotalLabel": "Tổng cộng:",
+    "totalPaymentLabel": "Thanh toán:",
+    "methodLabel": "Hình thức:",
+    "customerPaidLabel": "Khách đưa:",
+    "changeLabel": "Tiền thừa:",
+    "thankYou": "Cảm ơn quý khách và hẹn gặp lại!",
+    "printAsk": "Bạn có muốn in hóa đơn không?",
+    "printYes": "Có, In hóa đơn",
+    "printNo": "Không, Tạo đơn mới",
+    "barcodeScanned": "Đã quét mã vạch",
+    "scanProductBarcode": "QUÉT MÃ VẠCH SẢN PHẨM",
+    "scanViaCamera": "Quét bằng Camera",
+    "enterManually": "Nhập mã thủ công",
+    "selectCamera": "Chọn Camera:",
+    "alignBarcode": "Căn chỉnh mã vạch vào giữa khung hình",
+    "scannerSimTitle": "MÔ PHỎNG CAMERA MÁY QUÉT",
+    "scannerSimDesc": "Không có camera khả dụng. Click vào sản phẩm để giả lập quét mã vạch:",
+    "manualScannerTitle": "BÀN PHÍM/MÁY QUÉT CẦM TAY",
+    "manualScannerDesc": "Hệ thống tự động lắng nghe từ máy quét cầm tay của bạn. Bạn cũng có thể nhập mã vạch bằng bàn phím vào ô nhập liệu bên phải bất cứ lúc nào.",
+    "manualScannerTip": "MẸO: Quét một sản phẩm bất kỳ ngay cả khi không mở hộp thoại này!",
+    "quickSearchLabel": "Nhập hoặc tìm nhanh sản phẩm",
+    "quickSearchPlaceholder": "Gõ tên sản phẩm, mã vạch rồi Enter...",
+    "recentlyScanned": "ĐÃ QUÉT GẦN ĐÂY",
+    "scannedTimes": "lần",
+    "noRecentScans": "Chưa có sản phẩm nào được quét",
+    "scannedProductsCount": "Các sản phẩm đã quét:",
+    "totalOrderPrice": "Tổng tiền đơn:",
+    "doneAndClose": "Hoàn tất và Đóng"
+  },
+  "customers": {
+    "totalCustomers": "Tổng khách hàng",
+    "activeCustomers": "Đã mua hàng",
+    "vipCustomers": "Khách VIP",
+    "totalSpent": "Tổng chi tiêu",
+    "addCustomer": "Thêm khách hàng",
+    "updateCustomer": "Cập nhật",
+    "cancelEdit": "Hủy sửa",
+    "formDesc": "Nhân viên có thể thêm khách mới hoặc cập nhật thông tin liên hệ.",
+    "fullName": "Họ tên",
+    "fullNamePlaceholder": "Nhập họ tên khách hàng",
+    "phone": "Số điện thoại",
+    "phonePlaceholder": "Nhập số điện thoại",
+    "email": "Email",
+    "emailPlaceholder": "Nhập email",
+    "address": "Địa chỉ",
+    "addressPlaceholder": "Nhập địa chỉ",
+    "gender": "Giới tính",
+    "genderPlaceholder": "Chưa chọn",
+    "genderMale": "Nam",
+    "genderFemale": "Nữ",
+    "genderOther": "Khác",
+    "dateOfBirth": "Ngày sinh",
+    "saving": "Đang lưu...",
+    "roleTitle": "Quyền nhân viên",
+    "roleNoteTitle": "Lưu ý",
+    "roleNoteDesc": "Nhân viên được thêm, tìm kiếm, chọn khách cho đơn tại quầy và cập nhật thông tin liên hệ. Không nên xóa khách hàng khỏi hệ thống.",
+    "vipDesc": "Chi tiêu từ 5.000.000đ",
+    "regularDesc": "Chi tiêu từ 2.000.000đ",
+    "newDesc": "Đã có đơn hàng",
+    "searchPlaceholder": "Tìm khách hàng theo tên, số điện thoại, email, địa chỉ...",
+    "rankFilterAll": "Tất cả",
+    "rankVip": "VIP",
+    "rankRegular": "Thân thiết",
+    "rankPurchased": "Mới mua",
+    "rankNew": "Khách mới",
+    "refresh": "Làm mới",
+    "loading": "Đang tải...",
+    "tableNo": "STT",
+    "tableName": "Khách hàng",
+    "tableContact": "Liên hệ",
+    "tableAddress": "Địa chỉ",
+    "tableOrders": "Số đơn",
+    "tableSpent": "Tổng chi tiêu",
+    "tableRank": "Hạng",
+    "tableLastOrder": "Đơn gần nhất",
+    "tableAction": "Thao tác",
+    "loadingFromDb": "Đang tải khách hàng từ database...",
+    "noProductsFound": "Không tìm thấy khách hàng phù hợp.",
+    "actionDetail": "Chi tiết",
+    "actionEdit": "Sửa",
+    "actionSelect": "Chọn",
+    "displayRange": "Hiển thị {{start}} - {{end}} trong tổng số {{total}} khách hàng",
+    "pageSizeLabel": "Số dòng:",
+    "modalTitle": "Thông tin khách hàng",
+    "modalClose": "×",
+    "modalCreatedDate": "Ngày tạo",
+    "modalSelectForOrder": "Chọn đơn hàng",
+    "alertFillName": "Vui lòng nhập họ tên khách hàng.",
+    "alertFillPhone": "Vui lòng nhập số điện thoại khách hàng.",
+    "alertInvalidEmail": "Email không hợp lệ.",
+    "alertLoadError": "Không thể tải dữ liệu khách hàng. {{message}}",
+    "toastSaveSuccess": "Thêm khách hàng thành công!",
+    "toastUpdateSuccess": "Cập nhật thông tin khách hàng thành công!",
+    "toastSaveFailed": "Lưu khách hàng thất bại: {{message}}",
+    "noPhone": "Chưa có SĐT",
+    "noEmail": "Chưa có email",
+    "notUpdated": "Chưa cập nhật",
+    "none": "Chưa có",
+    "loadErrorTitle": "Lỗi tải dữ liệu"
+  },
+  "header": {
+    "quickNotifications": "Thông báo nhanh",
+    "lowStockDesc": "Atomic Habits chỉ còn 3 cuốn.",
+    "draftsDesc": "Có 2 đơn đang được lưu tạm.",
+    "shiftDesc": "Nhớ đóng ca trước khi kết thúc ngày."
+  },
+  "dashboard": {
+    "title": "Tổng quan ca làm",
+    "loadError": "Không thể tải dữ liệu dashboard. {{message}}",
+    "loadErrorTitle": "Lỗi tải dữ liệu",
+    "todayOrders": "Đơn hôm nay",
+    "todayOrdersDesc": "Tính theo ngày hiện tại",
+    "todayRevenue": "Doanh thu ca",
+    "todayRevenueDesc": "Đơn đã thanh toán",
+    "soldBooks": "Sách đã bán",
+    "soldBooksDesc": "Trong các đơn hôm nay",
+    "returns": "Đơn đổi trả",
+    "returnsDesc": "Tổng đơn đổi trả",
+    "quickActions": "Thao tác nhanh",
+    "actionPos": "Bán hàng tại quầy",
+    "actionCustomers": "Tạo khách hàng",
+    "actionOrders": "Xem đơn hàng",
+    "actionShift": "Đóng ca",
+    "notifications": "Thông báo",
+    "lowStockWarningTitle": "Sách sắp hết hàng",
+    "lowStockWarningDesc": "Có {{count}} sản phẩm còn từ 1 đến 3 cuốn trong kho.",
+    "stableStockTitle": "Tồn kho ổn định",
+    "stableStockDesc": "Chưa có sản phẩm nào sắp hết hàng.",
+    "todayOrdersAlertTitle": "Đơn hôm nay",
+    "todayOrdersAlertDesc": "Có {{count}} đơn hàng trong ngày.",
+    "shiftOpenTitle": "Ca bán đang mở",
+    "shiftOpenDesc": "Bạn đang ở trang làm việc của nhân viên.",
+    "recentOrders": "Đơn hàng gần đây",
+    "viewAll": "Xem tất cả",
+    "tableOrderId": "Mã đơn",
+    "tableCustomer": "Khách hàng",
+    "tableTotal": "Tổng tiền",
+    "tableStatus": "Trạng thái",
+    "tableTime": "Thời gian",
+    "loading": "Đang tải dữ liệu...",
+    "noOrders": "Chưa có đơn hàng.",
+    "customerWalkin": "Khách lẻ",
+    "pendingPayment": "Chờ thanh toán"
+  },
+  "loyalty": {
+    "defaultCustomerName": "Khách hàng",
+    "loadError": "Không thể tải dữ liệu. {{message}}",
+    "ranks": {
+      "diamond": "Kim cương",
+      "gold": "Vàng",
+      "silver": "Bạc",
+      "bronze": "Đồng"
+    },
+    "alerts": {
+      "selectCustomer": "Vui lòng chọn khách hàng.",
+      "invalidPoints": "Số điểm đổi phải lớn hơn 0.",
+      "insufficientPoints": "Khách hàng không đủ điểm.",
+      "enterReason": "Vui lòng nhập lý do/chương trình đổi điểm.",
+      "redeemSuccess": "Đổi thành công {{points}} điểm cho {{name}}!"
+    },
+    "stats": {
+      "totalPoints": "Tổng điểm tích lũy",
+      "vipMembers": "Thành viên VIP",
+      "pointsRedeemed": "Điểm đã đổi",
+      "membersWithPoints": "Khách hàng có điểm"
+    },
+    "redeemForm": {
+      "title": "Đổi điểm thành viên",
+      "desc": "Trừ điểm tích lũy của khách hàng",
+      "cancel": "Hủy chọn",
+      "phone": "SĐT:",
+      "noPhone": "Không có",
+      "rank": "Hạng:",
+      "currentPoints": "Điểm hiện tại:",
+      "placeholder": "Vui lòng chọn khách hàng từ danh sách bên phải.",
+      "pointsLabel": "Số điểm cần đổi",
+      "equivalent": "Tương đương:",
+      "rateTip": "(Quy đổi 1 điểm = 1.000đ)",
+      "reasonLabel": "Lý do / Chương trình",
+      "processing": "Đang xử lý...",
+      "submit": "Xác nhận đổi điểm"
+    },
+    "lookup": {
+      "title": "Tra cứu điểm khách hàng",
+      "loading": "Đang tải...",
+      "refresh": "Làm mới",
+      "searchPlaceholder": "Tìm tên, SĐT, email...",
+      "rankPlaceholder": "Chọn hạng",
+      "clearRankTip": "Xóa hạng đã chọn"
+    },
+    "table": {
+      "no": "STT",
+      "customer": "Khách hàng",
+      "rank": "Hạng",
+      "spent": "Tổng chi tiêu",
+      "points": "Điểm khả dụng",
+      "action": "Thao tác",
+      "loadingData": "Đang tải dữ liệu...",
+      "selectRedeem": "Chọn đổi",
+      "noCustomers": "Không tìm thấy khách hàng."
+    },
+    "pagination": {
+      "displayRange": "Hiển thị {{start}} – {{end}} trong tổng số {{total}}",
+      "pageSize": "Số dòng:"
+    }
+  },
+  "orders": {
+    "loadError": "Không thể tải đơn hàng từ database. Kiểm tra API {{url}}. {{message}}",
+    "loadErrorTitle": "Lỗi tải dữ liệu",
+    "stats": {
+      "totalOrders": "Tổng đơn",
+      "waitingOrders": "Đơn cần xử lý",
+      "paidRevenue": "Đã thanh toán",
+      "debt": "Công nợ"
+    },
+    "toolbar": {
+      "searchPlaceholder": "Tìm mã đơn, khách hàng, SĐT...",
+      "clearFilter": "Xóa bộ lọc",
+      "loading": "Đang tải...",
+      "refresh": "Làm mới",
+      "all": "Tất cả"
+    },
+    "statuses": {
+      "new": "Đơn mới",
+      "processing": "Đang xử lý",
+      "packed": "Đã đóng gói",
+      "shipping": "Đang giao",
+      "shipped": "Giao thành công",
+      "cancelled": "Bị hủy",
+      "returned": "Hoàn hàng",
+      "ship_unassigned": "Chưa giao vận",
+      "ship_handed_over": "Đã giao cho vận chuyển",
+      "ship_shipper_delivering": "Shipper đang giao",
+      "ship_delayed": "Giao chậm",
+      "ship_lost": "Thất lạc",
+      "ship_delivered": "Đã giao",
+      "pay_unpaid": "Chưa thanh toán",
+      "pay_paid": "Đã thanh toán",
+      "pay_debt": "Còn nợ",
+      "cod_not_applicable": "Không áp dụng",
+      "cod_pending": "Chưa về",
+      "cod_collected": "Đã về",
+      "issue_none": "Không có",
+      "issue_address_change": "Khách đổi địa chỉ",
+      "issue_customer_cancelled": "Khách hủy đơn",
+      "issue_wrong_goods": "Giao sai hàng",
+      "issue_missing_goods": "Thiếu hàng",
+      "issue_defective_goods": "Hàng lỗi",
+      "issue_customer_refused": "Khách không nhận hàng"
+    },
+    "table": {
+      "stt": "STT",
+      "code": "Mã đơn",
+      "staff": "Tên nhân viên",
+      "customer": "Khách hàng",
+      "total": "Tổng tiền",
+      "orderStatus": "Trạng thái đơn",
+      "shippingStatus": "Trạng thái giao hàng",
+      "paymentStatus": "Thanh toán",
+      "issue": "Phát sinh",
+      "actions": "Thao tác",
+      "actionDetail": "Chi tiết",
+      "actionPrint": "In",
+      "actionDelete": "Xóa",
+      "loadingData": "Đang tải dữ liệu đơn hàng...",
+      "noOrders": "Không tìm thấy đơn hàng phù hợp."
+    },
+    "pagination": {
+      "displayRange": "Hiển thị {{start}} - {{end}} trong tổng số {{total}} đơn hàng",
+      "pageSize": "Số dòng:"
+    },
+    "modal": {
+      "detailTitle": "Chi tiết đơn hàng: {{code}}",
+      "customer": "Tên khách hàng",
+      "phone": "Số điện thoại",
+      "address": "Địa chỉ",
+      "payment": "Thanh toán",
+      "status": "Trạng thái",
+      "staff": "Tên nhân viên",
+      "note": "Ghi chú",
+      "noNote": "Không có",
+      "createdAt": "Ngày giờ lập",
+      "tableName": "Tên sản phẩm",
+      "tableQty": "Số lượng",
+      "tablePrice": "Giá",
+      "tableSubtotal": "Thành tiền",
+      "totalAmount": "Tổng tiền",
+      "btnClose": "Đóng",
+      "btnPrint": "In hóa đơn"
+    },
+    "deleteDialog": {
+      "title": "Xóa đơn hàng",
+      "confirmText": "Bạn có chắc muốn xóa đơn hàng {{code}} không? Hành động này không thể hoàn tác.",
+      "btnCancel": "Hủy bỏ",
+      "btnConfirm": "Xóa"
+    },
+    "alerts": {
+      "noDbIdUpdate": "Đơn hàng này không có Id từ database nên không thể cập nhật.",
+      "updateFailed": "Cập nhật thất bại: {{message}}",
+      "noDbIdDelete": "Đơn hàng này không có Id từ database nên không thể xóa.",
+      "deleteFailed": "Xóa thất bại: {{message}}",
+      "deleteSuccess": "Xóa đơn hàng thành công"
+    },
+    "receipt": {
+      "address": "Số 1 Xa lộ Hà Nội, Tăng Nhơn Phú, Hồ Chí Minh",
+      "hotline": "Hotline: 1900 6868",
+      "title": "HÓA ĐƠN BÁN HÀNG",
+      "staffName": "Tên nhân viên:",
+      "orderCode": "Mã hóa đơn:",
+      "invoiceDate": "Ngày lập hóa đơn:",
+      "customerName": "Tên khách hàng:",
+      "productName": "Tên sản phẩm",
+      "qty": "Số lượng",
+      "total": "Tổng tiền",
+      "subtotal": "Tổng cộng:",
+      "discount": "Giảm giá:",
+      "payment": "Thanh toán:",
+      "paymentMethod": "Hình thức:",
+      "customerPaid": "Khách đưa:",
+      "change": "Tiền thừa:",
+      "footer": "Cảm ơn quý khách và hẹn gặp lại!",
+      "onlineOrder": "Khách tự đặt"
+    }
+  },
+  "reports": {
+    "defaults": {
+      "product": "Sản phẩm",
+      "walkInCustomer": "Khách lẻ",
+      "staff": "Nhân viên",
+      "noStatus": "Chưa có trạng thái",
+      "noDate": "—",
+      "noReason": "Không có"
+    },
+    "filters": {
+      "today": "Hôm nay",
+      "week": "7 ngày",
+      "month": "Tháng này",
+      "all": "Tất cả"
+    },
+    "toolbar": {
+      "searchPlaceholder": "Tìm mã đơn, khách hàng...",
+      "loading": "Đang tải...",
+      "refresh": "Làm mới"
+    },
+    "alerts": {
+      "loadErrorTitle": "Lỗi tải dữ liệu",
+      "loadError": "Không thể tải dữ liệu: {{message}}"
+    },
+    "stats": {
+      "totalOrders": "Tổng đơn hàng trong ca",
+      "revenue": "Doanh thu",
+      "soldItems": "Sản phẩm đã bán",
+      "returns": "Đổi trả"
+    },
+    "sections": {
+      "topProducts": "Sản phẩm bán chạy",
+      "paymentReport": "Báo cáo thanh toán",
+      "orderList": "Danh sách đơn hàng",
+      "shiftClosing": "Kết ca"
+    },
+    "badges": {
+      "productCount": "{{count}} sản phẩm",
+      "orderCount": "{{count}} đơn"
+    },
+    "empty": {
+      "loading": "Đang tải...",
+      "noSalesData": "Chưa có dữ liệu bán hàng.",
+      "noPaymentTitle": "Chưa có dữ liệu thanh toán",
+      "noPaymentDesc": "Các đơn hàng chưa có payment record trong database.",
+      "noPaymentData": "Chưa có dữ liệu thanh toán.",
+      "noOrders": "Không có đơn hàng trong kỳ này."
+    },
+    "table": {
+      "no": "STT",
+      "product": "Sản phẩm",
+      "quantity": "SL",
+      "revenue": "Doanh thu",
+      "paymentMethod": "Phương thức",
+      "orderCount": "Số đơn",
+      "amount": "Số tiền",
+      "percent": "Phần trăm",
+      "orderCode": "Mã đơn",
+      "customer": "Khách hàng",
+      "total": "Tổng tiền",
+      "status": "Trạng thái",
+      "createdAt": "Ngày tạo",
+      "moreProducts": "+{{count}} sp khác",
+      "limitNote": "Hiển thị {{shown}} / {{total}} đơn"
+    },
+    "payment": {
+      "cash": "Tiền mặt"
+    },
+    "summary": {
+      "cash": "Tiền mặt",
+      "bankCard": "Chuyển khoản / thẻ",
+      "openingCash": "Tiền đầu ca",
+      "cashRevenue": "Doanh thu tiền mặt",
+      "bankCardRevenue": "Doanh thu chuyển khoản / thẻ",
+      "extraIncome": "Thu thêm trong ca",
+      "expense": "Chi phí trong ca",
+      "expectedCash": "Tiền mặt cần bàn giao"
+    },
+    "shift": {
+      "openShift": "Ca {{id}} · {{staff}}",
+      "noOpenShift": "Chưa có ca đang mở"
+    },
+    "transactions": {
+      "title": "Lịch sử thu / chi trong ca ({{count}} giao dịch)",
+      "type": "Loại",
+      "reason": "Lý do",
+      "amount": "Số tiền",
+      "time": "Thời gian",
+      "income": "⬆ Thu",
+      "expense": "⬇ Chi"
+    },
+    "actions": {
+      "print": "In báo cáo",
+      "refreshData": "Làm mới dữ liệu"
+    },
+    "print": {
+      "title": "Báo cáo ca làm",
+      "heading": "Báo cáo ca làm – Book-Store",
+      "printedAt": "In lúc",
+      "totalOrders": "Tổng đơn",
+      "revenue": "Doanh thu",
+      "items": "Sản phẩm"
+    }
+  },
+  "returns": {
+    "defaults": {
+      "product": "Sản phẩm",
+      "walkInCustomer": "Khách lẻ",
+      "noPhone": "Chưa có SĐT",
+      "notUpdated": "Chưa cập nhật",
+      "noDate": "Chưa có"
+    },
+    "issues": {
+      "none": "Không có",
+      "defectiveGoods": "Hàng lỗi",
+      "wrongGoods": "Giao sai hàng",
+      "missingGoods": "Thiếu hàng",
+      "customerRefused": "Khách không nhận hàng",
+      "customerCancelled": "Khách hủy đơn"
+    },
+    "statuses": {
+      "new": "Đơn mới",
+      "processing": "Đang xử lý",
+      "returned": "Hoàn hàng",
+      "cancelled": "Bị hủy",
+      "delivered": "Giao thành công"
+    },
+    "shippingStatuses": {
+      "unassigned": "Chưa giao vận"
+    },
+    "paymentStatuses": {
+      "unpaid": "Chưa thanh toán"
+    },
+    "stats": {
+      "total": "Tổng đổi trả",
+      "pending": "Chờ xử lý",
+      "faultyOrWrong": "Hàng lỗi / Sai",
+      "totalRefund": "Tổng tiền hoàn"
+    },
+    "rules": {
+      "title": "Quy định đổi trả",
+      "within7DaysTitle": "Trong 7 ngày",
+      "within7DaysDesc": "Chỉ hỗ trợ đổi trả với sản phẩm còn hóa đơn mua hàng.",
+      "managerApprovalTitle": "Cần quản lý duyệt",
+      "managerApprovalDesc": "Hoàn tiền số tiền lớn hoặc ngoài thời hạn cần quản lý xác nhận.",
+      "defectiveWrongTitle": "Hàng lỗi / Giao sai",
+      "defectiveWrongDesc": "Hoàn 100% tiền hàng, không tính phí vận chuyển."
+    },
+    "issueStats": {
+      "title": "Thống kê theo sự cố",
+      "issueType": "Loại sự cố",
+      "quantity": "Số lượng"
+    },
+    "list": {
+      "title": "Danh sách đơn đổi trả",
+      "searchPlaceholder": "Tìm mã đơn, tên khách, SĐT, sự cố..."
+    },
+    "filters": {
+      "all": "Tất cả",
+      "clear": "Xóa lựa chọn"
+    },
+    "table": {
+      "no": "STT",
+      "orderCode": "Mã đơn",
+      "customer": "Khách hàng",
+      "issue": "Sự cố",
+      "product": "Sản phẩm",
+      "amount": "Số tiền",
+      "orderStatus": "Trạng thái đơn",
+      "createdAt": "Ngày tạo",
+      "actions": "Thao tác",
+      "loading": "Đang tải dữ liệu từ database...",
+      "noReturns": "Không có đơn đổi trả nào trong hệ thống.",
+      "noFiltered": "Không tìm thấy đơn phù hợp với bộ lọc.",
+      "moreProducts": "+{{count}} sản phẩm khác"
+    },
+    "modal": {
+      "title": "Chi tiết đổi trả – {{code}}",
+      "createdAt": "Ngày tạo",
+      "issue": "Sự cố",
+      "customer": "Khách hàng",
+      "phone": "Số điện thoại",
+      "address": "Địa chỉ",
+      "payment": "Thanh toán",
+      "shipping": "Giao hàng",
+      "product": "Sản phẩm",
+      "quantity": "SL",
+      "unitPrice": "Đơn giá",
+      "subtotal": "Thành tiền",
+      "refundTotal": "Tổng tiền hoàn trả",
+      "updateStatus": "Cập nhật trạng thái đơn",
+      "processNote": "Ghi chú xử lý",
+      "notePlaceholder": "Nhập ghi chú xử lý đổi trả..."
+    },
+    "actions": {
+      "refresh": "Làm mới",
+      "loading": "Đang tải...",
+      "process": "Xử lý",
+      "close": "Đóng",
+      "save": "Lưu",
+      "saving": "Đang lưu..."
+    },
+    "pagination": {
+      "displayRange": "Hiển thị {{start}} - {{end}} trong tổng số {{total}} đơn đổi trả",
+      "pageSize": "Số dòng:"
+    },
+    "alerts": {
+      "loadErrorTitle": "Lỗi tải dữ liệu",
+      "loadError": "Không thể tải dữ liệu: {{message}}",
+      "missingOrderId": "Đơn hàng không có ID, không thể cập nhật.",
+      "updateSuccess": "Đã cập nhật xử lý đổi trả thành công!",
+      "updateFailed": "Cập nhật thất bại: {{message}}"
+    }
+  },
+  "products": {
+    "stats": {
+      "total": "Tổng sản phẩm",
+      "inStock": "Còn hàng",
+      "lowStock": "Sắp hết",
+      "totalValue": "Giá trị tồn kho"
+    },
+    "toolbar": {
+      "searchPlaceholder": "Tìm tên sản phẩm, tác giả,...",
+      "all": "Tất cả",
+      "refresh": "Làm mới",
+      "clearFilter": "Xóa bộ lọc",
+      "outOfStockReport": "Báo hết hàng"
+    },
+    "table": {
+      "no": "STT",
+      "name": "Tên sản phẩm",
+      "type": "Phân loại",
+      "authorBrand": "Tác giả / Thương hiệu",
+      "category": "Danh mục",
+      "price": "Giá bán",
+      "stock": "Tồn kho",
+      "status": "Trạng thái",
+      "action": "Thao tác"
+    },
+    "status": {
+      "inStock": "Còn hàng",
+      "lowStock": "Sắp hết",
+      "outOfStock": "Hết hàng"
+    },
+    "types": {
+      "book": "Sách",
+      "stationery": "Văn phòng phẩm",
+      "toy": "Đồ chơi",
+      "accessory": "Phụ kiện",
+      "schoolSupply": "Đồ dùng học tập",
+      "souvenir": "Quà lưu niệm"
+    },
+    "defaults": {
+      "noName": "Chưa có tên",
+      "unknown": "Đang cập nhật"
+    },
+    "actions": {
+      "detail": "Chi tiết",
+      "close": "Đóng",
+      "copyList": "Copy danh sách"
+    },
+    "modal": {
+      "detailTitle": "Chi tiết sản phẩm",
+      "id": "Mã sản phẩm",
+      "reportTitle": "Danh sách cần nhập hàng",
+      "reportSummary": "Có {{count}} sản phẩm sắp hết hoặc đã hết hàng",
+      "noItems": "Không có sản phẩm nào sắp hết hoặc hết hàng."
+    },
+    "alerts": {
+      "copySuccess": "Đã copy danh sách vào clipboard!",
+      "loadPartialError": "Một số nhóm sản phẩm chưa tải được: {{sources}}. Kiểm tra lại endpoint API.",
+      "loadError": "Không thể tải sản phẩm từ database. {{message}}",
+      "loading": "Đang tải sản phẩm từ database...",
+      "noFound": "Không tìm thấy sản phẩm phù hợp.",
+      "dataTitle": "Thông báo tải dữ liệu"
+    },
+    "pagination": {
+      "displayRange": "Hiển thị {{start}} - {{end}} trong tổng số {{total}} sản phẩm",
+      "pageSize": "Số dòng:"
+    }
+  },
+  "errors": {
+    "apiError": "Lỗi API {{status}}"
+  },
+  "profile": {
+    "avatarAlt": "Ảnh đại diện",
+    "online": "Đang online",
+    "roleId": "Mã quyền: {{id}}",
+    "defaults": {
+      "staffName": "Staff01",
+      "email": "staff01@gmail.com",
+      "notUpdated": "Chưa cập nhật",
+      "joinDate": "01/01/2026"
+    },
+    "roles": {
+      "admin": "Quản trị viên",
+      "staff": "Nhân viên bán hàng"
+    },
+    "sections": {
+      "personalInfo": "Thông tin cá nhân",
+      "todayShift": "Ca làm hôm nay",
+      "security": "Cài đặt & Bảo mật"
+    },
+    "fields": {
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "address": "Địa chỉ",
+      "joinDate": "Ngày tham gia",
+      "fullName": "Họ và tên",
+      "oldPassword": "Mật khẩu hiện tại",
+      "newPassword": "Mật khẩu mới",
+      "confirmPassword": "Xác nhận mật khẩu mới"
+    },
+    "actions": {
+      "uploadAvatar": "Tải lên ảnh đại diện mới",
+      "updateInfo": "Cập nhật thông tin",
+      "changePassword": "Đổi mật khẩu",
+      "history": "Lịch sử hoạt động",
+      "cancel": "Hủy bỏ",
+      "save": "Lưu",
+      "confirm": "Xác nhận",
+      "close": "Đóng"
+    },
+    "shift": {
+      "startTime": "Giờ bắt đầu",
+      "startTimeSample": "08:00",
+      "workingHours": "Số giờ làm",
+      "durationSample": "4h 30p",
+      "completedOrders": "Đơn hoàn thành",
+      "ordersSample": "{{count}} đơn",
+      "revenue": "Doanh thu ca"
+    },
+    "modals": {
+      "infoTitle": "Cập nhật thông tin cá nhân",
+      "passwordTitle": "Đổi mật khẩu tài khoản",
+      "historyTitle": "Lịch sử hoạt động & Ca làm việc"
+    },
+    "placeholders": {
+      "fullName": "Nhập họ và tên đầy đủ",
+      "phone": "Ví dụ: 0912 345 678",
+      "email": "Nhập địa chỉ email",
+      "address": "Nhập địa chỉ cư trú hiện tại",
+      "oldPassword": "Nhập mật khẩu hiện tại của bạn",
+      "newPassword": "Nhập mật khẩu mới",
+      "confirmPassword": "Xác nhận lại mật khẩu mới"
+    },
+    "history": {
+      "loading": "Đang truy xuất dữ liệu...",
+      "emptyTitle": "Chưa có lịch sử ca làm việc",
+      "emptyDesc": "Các ca làm việc đã đóng sẽ xuất hiện tại đây.",
+      "shiftId": "Mã ca",
+      "openedAt": "Thời gian mở",
+      "closedAt": "Thời gian đóng",
+      "openingCash": "Tiền đầu ca",
+      "transactions": "Giao dịch",
+      "status": "Trạng thái",
+      "transactionCount": "{{count}} giao dịch",
+      "closed": "Đã kết thúc"
+    },
+    "toasts": {
+      "avatarTooLarge": "Dung lượng file tối đa là 2MB!",
+      "missingStaffId": "Không tìm thấy mã nhân viên.",
+      "avatarUpdateSuccess": "Cập nhật ảnh đại diện thành công!",
+      "avatarUpdateFailed": "Lỗi khi tải ảnh lên: {{message}}",
+      "updateInfoSuccess": "Cập nhật thông tin nhân viên thành công!",
+      "updateInfoFailed": "Lỗi khi cập nhật thông tin: {{message}}",
+      "passwordNotMatch": "Mật khẩu xác nhận không khớp!",
+      "changePasswordSuccess": "Đổi mật khẩu tài khoản thành công!",
+      "changePasswordFailed": "Lỗi khi đổi mật khẩu: {{message}}"
+    },
+    "errors": {
+      "loadProfile": "Lỗi khi tải thông tin nhân viên:",
+      "loadHistory": "Lỗi khi tải lịch sử ca:",
+      "serverError": "Lỗi từ máy chủ: {{status}}",
+      "avatarUrlMissing": "Không lấy được đường dẫn ảnh từ phản hồi."
+    }
+  },
+  "promotions": {
+    "defaults": {
+      "noName": "Chưa có tên",
+      "noCode": "Chưa có mã",
+      "noDate": "Chưa có"
+    },
+    "form": {
+      "addTitle": "Thêm khuyến mãi mới",
+      "editTitle": "Cập nhật khuyến mãi",
+      "description": "Cấu hình chương trình giảm giá cho hệ thống",
+      "code": "Mã khuyến mãi",
+      "codePlaceholder": "VD: SUMMER2024",
+      "name": "Tên chương trình",
+      "namePlaceholder": "Nhập tên chương trình",
+      "discountPercent": "Giảm giá (%)",
+      "startDate": "Ngày bắt đầu",
+      "endDate": "Ngày kết thúc",
+      "descriptionLabel": "Mô tả",
+      "descriptionPlaceholder": "Nhập mô tả chi tiết...",
+      "active": "Kích hoạt",
+      "processing": "Đang xử lý...",
+      "createButton": "Tạo mới",
+      "updateButton": "Cập nhật",
+      "cancel": "Hủy"
+    },
+    "list": {
+      "title": "Danh sách khuyến mãi",
+      "searchPlaceholder": "Tìm theo mã, tên...",
+      "clearStatusFilter": "Xóa bộ lọc trạng thái",
+      "refresh": "Làm mới",
+      "loadingShort": "Đang tải..."
+    },
+    "status": {
+      "all": "Tất cả trạng thái",
+      "ongoing": "Đang diễn ra",
+      "upcoming": "Sắp diễn ra",
+      "endingSoon": "Sắp hết hạn",
+      "expired": "Hết hạn"
+    },
+    "table": {
+      "no": "STT",
+      "program": "Chương trình",
+      "discount": "Giảm giá",
+      "period": "Thời hạn",
+      "status": "Trạng thái",
+      "actions": "Thao tác",
+      "code": "Mã",
+      "from": "Từ",
+      "to": "Đến",
+      "edit": "Sửa",
+      "loading": "Đang tải danh sách...",
+      "empty": "Không tìm thấy khuyến mãi nào."
+    },
+    "pagination": {
+      "displayRange": "Hiển thị {{start}} - {{end}} trong tổng số {{total}}",
+      "pageSize": "Số dòng:"
+    },
+    "alerts": {
+      "loadErrorTitle": "Lỗi tải dữ liệu:",
+      "loadError": "Không thể tải dữ liệu khuyến mãi. {{message}}",
+      "requiredCode": "Vui lòng nhập mã khuyến mãi.",
+      "requiredName": "Vui lòng nhập tên chương trình.",
+      "invalidDiscount": "Phần trăm giảm giá phải từ 1 đến 100.",
+      "invalidDateRange": "Ngày bắt đầu không được lớn hơn ngày kết thúc.",
+      "createSuccess": "Tạo khuyến mãi thành công!",
+      "updateSuccess": "Cập nhật khuyến mãi thành công!",
+      "saveFailed": "Lưu khuyến mãi thất bại: {{message}}"
+    }
+  },
+  "shift": {
+    "defaults": {
+      "staff": "Nhân viên",
+      "noDate": "—",
+      "noReason": "Không có"
+    },
+    "tabs": {
+      "current": "Ca hiện tại",
+      "history": "Lịch sử ca"
+    },
+    "loading": {
+      "currentShift": "Đang tải thông tin ca..."
+    },
+    "open": {
+      "noShiftTitle": "Chưa có ca làm việc",
+      "noShiftDesc": "Nhập số tiền đầu ca để bắt đầu làm việc",
+      "openingCash": "Tiền đầu ca (VND)",
+      "openingCashPlaceholder": "Ví dụ: 1000000",
+      "opening": "Đang mở ca...",
+      "openButton": "🔓 Mở ca làm việc"
+    },
+    "stats": {
+      "status": "Trạng thái ca",
+      "open": "Đang mở",
+      "openingCash": "Tiền đầu ca",
+      "todayRevenue": "Doanh thu hôm nay",
+      "expectedCash": "Tiền cần bàn giao"
+    },
+    "current": {
+      "infoTitle": "Thông tin ca",
+      "shiftLabel": "Ca {{id}} · {{staff}}"
+    },
+    "summary": {
+      "openingCash": "Tiền đầu ca",
+      "cashRevenue": "Doanh thu tiền mặt",
+      "bankRevenue": "Doanh thu chuyển khoản/thẻ",
+      "totalIncome": "Tổng thu thêm",
+      "totalExpense": "Tổng chi",
+      "expectedCash": "Tiền mặt dự kiến"
+    },
+    "transaction": {
+      "income": "⬆ Thu",
+      "expense": "⬇ Chi",
+      "incomeText": "Thu",
+      "expenseText": "Chi"
+    },
+    "transactionForm": {
+      "title": "Thêm thu / chi",
+      "reason": "Lý do",
+      "amount": "Số tiền (VND)",
+      "incomeReasonPlaceholder": "VD: Thu phí đổi sách",
+      "expenseReasonPlaceholder": "VD: Mua túi đựng",
+      "amountPlaceholder": "Nhập số tiền"
+    },
+    "transactions": {
+      "title": "Lịch sử thu chi trong ca",
+      "count": "{{count}} giao dịch",
+      "no": "STT",
+      "type": "Loại",
+      "reason": "Lý do",
+      "amount": "Số tiền",
+      "time": "Thời gian",
+      "actions": "Thao tác",
+      "empty": "Chưa có giao dịch nào trong ca này.",
+      "totalIncome": "Thu",
+      "totalExpense": "Chi",
+      "difference": "Chênh lệch"
+    },
+    "history": {
+      "title": "Lịch sử ca làm việc",
+      "shift": "Ca",
+      "staff": "Nhân viên",
+      "openedAt": "Mở lúc",
+      "closedAt": "Đóng lúc",
+      "openingCash": "Tiền đầu ca",
+      "income": "Thu",
+      "expense": "Chi",
+      "transactions": "Giao dịch",
+      "loading": "⏳ Đang tải...",
+      "empty": "Chưa có ca nào đã đóng.",
+      "transactionCount": "{{count}} giao dịch"
+    },
+    "actions": {
+      "loading": "Đang tải...",
+      "refresh": "Làm mới",
+      "saving": "Đang lưu...",
+      "delete": "Xóa",
+      "closeShift": "Đóng ca",
+      "closing": "Đang đóng ca...",
+      "updateRevenue": "Cập nhật doanh thu",
+      "updatingRevenue": "Đang cập nhật...",
+      "saveTransaction": "Lưu giao dịch"
+    },
+    "confirm": {
+      "confirm": "Xác nhận",
+      "cancel": "Hủy",
+      "closeTitle": "Xác nhận đóng ca",
+      "closeMessage": "Bạn có chắc muốn đóng ca?\nTiền bàn giao: {{amount}}",
+      "deleteTransactionTitle": "Xóa giao dịch",
+      "deleteTransactionMessage": "Xóa giao dịch này?"
+    },
+    "alerts": {
+      "errorTitle": "Lỗi",
+      "loadShiftError": "Lỗi: {{message}}",
+      "missingStaff": "Không xác định được nhân viên. Vui lòng đăng nhập lại.",
+      "openSuccess": "✅ Đã mở ca làm việc thành công!",
+      "openFailed": "Mở ca thất bại: {{message}}",
+      "closeSuccess": "🔒 Đã đóng ca thành công!",
+      "closeFailed": "Đóng ca thất bại: {{message}}",
+      "requiredReason": "Vui lòng nhập lý do.",
+      "invalidAmount": "Số tiền phải lớn hơn 0.",
+      "addTransactionSuccess": "✅ Đã thêm giao dịch {{type}} {{amount}}",
+      "addTransactionFailed": "Thêm giao dịch thất bại: {{message}}",
+      "deleteTransactionSuccess": "Đã xóa giao dịch.",
+      "deleteTransactionFailed": "Xóa thất bại: {{message}}"
+    }
+  }
+}

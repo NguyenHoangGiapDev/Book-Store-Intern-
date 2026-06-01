@@ -1,0 +1,924 @@
+{
+  "common": {
+    "refresh": "Refresh",
+    "apply": "Apply",
+    "deleteAll": "Delete all",
+    "payment": "Payment",
+    "stock": "Stock",
+    "logout": "Logout",
+    "confirmTitle": "Confirmation",
+    "confirmMessage": "Are you sure you want to perform this action?",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "staff": {
+    "brand": "Book-Store Staff",
+    "expandSidebar": "Expand sidebar",
+    "collapseSidebar": "Collapse sidebar",
+    "avatarAlt": "Avatar",
+    "online": "Online",
+    "logoutSuccess": "Successfully logged out of the system!",
+    "logoutConfirmMessage": "Are you sure you want to log out of the Book-Store Staff system?",
+    "menu": {
+      "pos": "Point of Sale",
+      "orders": "Order Management",
+      "products": "Product Management",
+      "customers": "Customer Management",
+      "returns": "Return Management",
+      "shift": "Shift & Cash Management",
+      "reports": "Shift Reports",
+      "promotions": "Promotion Management",
+      "loyalty": "Loyalty Management",
+      "profile": "Profile"
+    }
+  },
+  "pos": {
+    "loyaltyPointAdded": "1 loyalty point has been added to the customer.",
+    "loyaltyPointAddFailed": "Payment succeeded, but loyalty points could not be added.",
+    "couponAppliedAlert": "Promotion code {{code}} applied successfully. {{percent}}% discount.",
+    "couponInactiveAlert": "This promotion code is not active.",
+    "couponUpcomingAlert": "This promotion code is not available yet.",
+    "couponExpiredAlert": "This promotion code has expired.",
+    "loadErrorAlert": "Error loading data: {{message}}",
+    "checkoutErrorAlert": "Checkout completion error: {{message}}",
+    "paymentErrorAlert": "Payment error: {{message}}",
+    "foundMemberAlert": "Member customer found: {{name}}",
+    "scannedButNotFoundAlert": "Barcode [{{barcode}}] was scanned successfully, but no matching product was found.",
+    "searchPlaceholder": "Search by name, author, barcode...",
+    "scanBarcode": "Scan barcode",
+    "loading": "Loading...",
+    "loadingFromDb": "Loading products from database...",
+    "noProductsFound": "No matching products found.",
+    "all": "All",
+    "categories": {
+      "books": "Books",
+      "stationery": "Stationery",
+      "toys": "Toys",
+      "accessories": "Accessories",
+      "schoolSupplies": "School supplies",
+      "souvenirs": "Souvenirs"
+    },
+    "paymentMethods": {
+      "cash": "Cash",
+      "bank": "Bank transfer",
+      "card": "Card",
+      "wallet": "E-wallet"
+    },
+    "orderProducts": "Products in order",
+    "itemsLines": "product lines",
+    "itemsCount": "items",
+    "cartEmptyTitle": "Cart is empty",
+    "cartEmptyDesc": "Select products from the list above or scan a barcode.",
+    "codeLabel": "Code:",
+    "outOfStock": "Out",
+    "paymentTitle": "Payment",
+    "selling": "Selling",
+    "noOrder": "No order",
+    "customerPhone": "Customer phone number",
+    "phonePlaceholder": "Enter phone number...",
+    "customerName": "Customer full name",
+    "namePlaceholder": "Enter customer name...",
+    "retailCustomer": "Walk-in customer",
+    "couponPlaceholder": "Promotion code: SALE10, SALE20",
+    "subtotal": "Subtotal",
+    "discountType": "Discount type",
+    "discountAmount": "Amount",
+    "discountPercent": "Percent",
+    "discountValue": "Discount",
+    "discounted": "Discounted",
+    "totalPayment": "Total payment",
+    "paymentMethod": "Payment method",
+    "customerPaid": "Customer paid",
+    "customerPaidPlaceholder": "Amount received",
+    "change": "Change",
+    "notes": "Notes",
+    "notesPlaceholder": "Customer needs invoice...",
+    "processing": "Processing...",
+    "saveDraft": "Save draft",
+    "draftOrders": "Draft orders",
+    "noDraftOrders": "No draft orders.",
+    "open": "Open",
+    "delete": "Delete",
+    "outOfStockAlert": "Product is out of stock.",
+    "stockMaxAlert": "The order quantity has reached the stock limit.",
+    "exceedStockAlert": "Cannot exceed stock quantity.",
+    "enterCouponAlert": "Please enter a coupon code.",
+    "couponPercentAlert": "10% discount applied.",
+    "couponAmountAlert": "50,000 VND discount applied.",
+    "invalidCouponAlert": "Invalid coupon code.",
+    "noProductsInCartAlert": "There are no products.",
+    "savedDraftAlert": "Draft order saved.",
+    "loadedDraftAlert": "Draft order loaded.",
+    "notEnoughPaidAlert": "Customer payment is not enough.",
+    "savedNewCustomerAlert": "New customer information has been saved.",
+    "barcodeNotFoundAlert": "Product barcode not found.",
+    "noCameraFound": "Camera is not accessible. You can use simulation or manual input.",
+    "scanToPay": "SCAN TO PAY",
+    "confirmReceived": "Confirm payment received",
+    "close": "Close",
+    "address": "No. 1 Xa Lo Ha Noi, Tang Nhon Phu, Ho Chi Minh City",
+    "salesInvoice": "SALES INVOICE",
+    "staff": "Staff",
+    "staffNameLabel": "Staff name:",
+    "invoiceIdLabel": "Invoice ID:",
+    "invoiceDateLabel": "Invoice date:",
+    "customerNameLabel": "Customer name:",
+    "productNameCol": "Product name",
+    "qtyCol": "Quantity",
+    "totalCol": "Total",
+    "subtotalLabel": "Subtotal:",
+    "totalPaymentLabel": "Payment:",
+    "methodLabel": "Method:",
+    "customerPaidLabel": "Customer paid:",
+    "changeLabel": "Change:",
+    "thankYou": "Thank you and see you again!",
+    "printAsk": "Do you want to print the invoice?",
+    "printYes": "Yes, print invoice",
+    "printNo": "No, create new order",
+    "barcodeScanned": "Barcode scanned",
+    "scanProductBarcode": "SCAN PRODUCT BARCODE",
+    "scanViaCamera": "Scan with camera",
+    "enterManually": "Manual input",
+    "selectCamera": "Select camera:",
+    "alignBarcode": "Align the barcode inside the frame",
+    "scannerSimTitle": "SCANNER CAMERA SIMULATION",
+    "scannerSimDesc": "No camera available. Click a product to simulate barcode scanning:",
+    "manualScannerTitle": "KEYBOARD / HANDHELD SCANNER",
+    "manualScannerDesc": "The system automatically listens to your handheld scanner. You can also type a barcode into the input on the right.",
+    "manualScannerTip": "TIP: You can scan any product even when this dialog is closed!",
+    "quickSearchLabel": "Enter or quickly search product",
+    "quickSearchPlaceholder": "Type product name or barcode then press Enter...",
+    "recentlyScanned": "RECENTLY SCANNED",
+    "scannedTimes": "times",
+    "noRecentScans": "No products scanned yet",
+    "scannedProductsCount": "Scanned products:",
+    "totalOrderPrice": "Order total:",
+    "doneAndClose": "Done and close"
+  },
+  "customers": {
+    "totalCustomers": "Total Customers",
+    "activeCustomers": "Purchased",
+    "vipCustomers": "VIP Customers",
+    "totalSpent": "Total Spending",
+    "addCustomer": "Add Customer",
+    "updateCustomer": "Update Customer",
+    "cancelEdit": "Cancel Edit",
+    "formDesc": "Staff can add new customers or update contact details.",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter customer full name",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter phone number",
+    "email": "Email",
+    "emailPlaceholder": "Enter email",
+    "address": "Address",
+    "addressPlaceholder": "Enter address",
+    "gender": "Gender",
+    "genderPlaceholder": "Not selected",
+    "genderMale": "Male",
+    "genderFemale": "Female",
+    "genderOther": "Other",
+    "dateOfBirth": "Date of Birth",
+    "saving": "Saving...",
+    "roleTitle": "Staff Privileges",
+    "roleNoteTitle": "Note",
+    "roleNoteDesc": "Staff can add, search, select customers for checkout orders, and update contact info. Customer deletion is not recommended.",
+    "vipDesc": "Spending from 5,000,000đ",
+    "regularDesc": "Spending from 2,000,000đ",
+    "newDesc": "Has placed orders",
+    "searchPlaceholder": "Search customers by name, phone, email, address...",
+    "rankFilterAll": "All",
+    "rankVip": "VIP",
+    "rankRegular": "Loyal",
+    "rankPurchased": "Mới mua",
+    "rankNew": "New customer",
+    "refresh": "Refresh",
+    "loading": "Loading...",
+    "tableNo": "No.",
+    "tableName": "Customer",
+    "tableContact": "Contact",
+    "tableAddress": "Address",
+    "tableOrders": "Orders",
+    "tableSpent": "Total Spending",
+    "tableRank": "Rank",
+    "tableLastOrder": "Last Order",
+    "tableAction": "Actions",
+    "loadingFromDb": "Loading customers from database...",
+    "noProductsFound": "No matching customers found.",
+    "actionDetail": "Details",
+    "actionEdit": "Edit",
+    "actionSelect": "Select",
+    "displayRange": "Showing {{start}} - {{end}} of {{total}} customers",
+    "pageSizeLabel": "Rows:",
+    "modalTitle": "Customer Information",
+    "modalClose": "×",
+    "modalCreatedDate": "Created Date",
+    "modalSelectForOrder": "Select for Order",
+    "alertFillName": "Please enter customer's full name.",
+    "alertFillPhone": "Please enter customer's phone number.",
+    "alertInvalidEmail": "Invalid email address.",
+    "alertLoadError": "Cannot load customer data. {{message}}",
+    "toastSaveSuccess": "Customer added successfully!",
+    "toastUpdateSuccess": "Customer details updated successfully!",
+    "toastSaveFailed": "Failed to save customer: {{message}}",
+    "noPhone": "No phone number",
+    "noEmail": "No email",
+    "notUpdated": "Not updated",
+    "none": "None",
+    "loadErrorTitle": "Error loading data"
+  },
+  "header": {
+    "title": "Staff Area",
+    "quickNotifications": "Quick Notifications",
+    "lowStockDesc": "Atomic Habits only has 3 copies remaining.",
+    "draftsDesc": "There are 2 draft orders saved.",
+    "shiftDesc": "Remember to close shift before ending the day."
+  },
+  "dashboard": {
+    "title": "Shift Summary Dashboard",
+    "loadError": "Unable to load dashboard data. {{message}}",
+    "loadErrorTitle": "Error Loading Data",
+    "todayOrders": "Today's Orders",
+    "todayOrdersDesc": "For the current day",
+    "todayRevenue": "Shift Revenue",
+    "todayRevenueDesc": "Paid orders",
+    "soldBooks": "Books Sold",
+    "soldBooksDesc": "In today's orders",
+    "returns": "Return Orders",
+    "returnsDesc": "Total returns",
+    "quickActions": "Quick Actions",
+    "actionPos": "Point of Sale (POS)",
+    "actionCustomers": "Create Customer",
+    "actionOrders": "View Orders",
+    "actionShift": "Close Shift",
+    "notifications": "Notifications",
+    "lowStockWarningTitle": "Low Stock Warning",
+    "lowStockWarningDesc": "There are {{count}} products with only 1 to 3 units remaining.",
+    "stableStockTitle": "Stable Inventory",
+    "stableStockDesc": "No products are currently running low.",
+    "todayOrdersAlertTitle": "Today's Orders",
+    "todayOrdersAlertDesc": "There are {{count}} orders placed today.",
+    "shiftOpenTitle": "Sales Shift Open",
+    "shiftOpenDesc": "You are currently logged into the staff dashboard.",
+    "recentOrders": "Recent Orders",
+    "viewAll": "View All",
+    "tableOrderId": "Order ID",
+    "tableCustomer": "Customer",
+    "tableTotal": "Total",
+    "tableStatus": "Status",
+    "tableTime": "Time",
+    "loading": "Loading dashboard data...",
+    "noOrders": "No orders placed yet.",
+    "customerWalkin": "Walk-in Customer",
+    "pendingPayment": "Pending Payment"
+  },
+  "loyalty": {
+    "defaultCustomerName": "Customer",
+    "loadError": "Unable to load data. {{message}}",
+    "ranks": {
+      "diamond": "Diamond",
+      "gold": "Gold",
+      "silver": "Silver",
+      "bronze": "Bronze"
+    },
+    "alerts": {
+      "selectCustomer": "Please select a customer.",
+      "invalidPoints": "Points to redeem must be greater than 0.",
+      "insufficientPoints": "Customer has insufficient points.",
+      "enterReason": "Please enter a reason or select a redemption program.",
+      "redeemSuccess": "Redeemed {{points}} points successfully for {{name}}!"
+    },
+    "stats": {
+      "totalPoints": "Total Points Accumulated",
+      "vipMembers": "VIP Members",
+      "pointsRedeemed": "Points Redeemed",
+      "membersWithPoints": "Members with Points"
+    },
+    "redeemForm": {
+      "title": "Redeem Member Points",
+      "desc": "Deduct points from customer balance",
+      "cancel": "Cancel Selection",
+      "phone": "Phone:",
+      "noPhone": "None",
+      "rank": "Rank:",
+      "currentPoints": "Current Points:",
+      "placeholder": "Please select a customer from the lookup list on the right.",
+      "pointsLabel": "Points to Redeem",
+      "equivalent": "Equivalent value:",
+      "rateTip": "(Conversion: 1 point = 1,000 VND)",
+      "reasonLabel": "Reason / Campaign",
+      "processing": "Processing...",
+      "submit": "Confirm Redemption"
+    },
+    "lookup": {
+      "title": "Customer Points Lookup",
+      "loading": "Loading...",
+      "refresh": "Refresh",
+      "searchPlaceholder": "Search by name, phone, email...",
+      "rankPlaceholder": "Filter by Rank",
+      "clearRankTip": "Clear selected rank filter"
+    },
+    "table": {
+      "no": "No.",
+      "customer": "Customer",
+      "rank": "Rank",
+      "spent": "Total Spent",
+      "points": "Available Points",
+      "action": "Action",
+      "loadingData": "Loading data...",
+      "selectRedeem": "Select",
+      "noCustomers": "No customers found."
+    },
+    "pagination": {
+      "displayRange": "Showing {{start}} – {{end}} of {{total}}",
+      "pageSize": "Rows per page:"
+    }
+  },
+  "orders": {
+    "loadError": "Unable to load orders from database. Check API {{url}}. {{message}}",
+    "loadErrorTitle": "Data Loading Error",
+    "stats": {
+      "totalOrders": "Total Orders",
+      "waitingOrders": "Needs Processing",
+      "paidRevenue": "Paid Revenue",
+      "debt": "Accounts Receivable"
+    },
+    "toolbar": {
+      "searchPlaceholder": "Search by code, customer, phone...",
+      "clearFilter": "Clear Filter",
+      "loading": "Loading...",
+      "refresh": "Refresh",
+      "all": "All"
+    },
+    "statuses": {
+      "new": "New Order",
+      "processing": "Processing",
+      "packed": "Packed",
+      "shipping": "Shipping",
+      "shipped": "Delivered",
+      "cancelled": "Cancelled",
+      "returned": "Returned",
+      "ship_unassigned": "Not Shipped",
+      "ship_handed_over": "Handed over to carrier",
+      "ship_shipper_delivering": "Out for Delivery",
+      "ship_delayed": "Delayed",
+      "ship_lost": "Lost",
+      "ship_delivered": "Delivered",
+      "pay_unpaid": "Unpaid",
+      "pay_paid": "Paid",
+      "pay_debt": "Debt",
+      "cod_not_applicable": "Not Applicable",
+      "cod_pending": "Pending",
+      "cod_collected": "Collected",
+      "issue_none": "None",
+      "issue_address_change": "Address Change",
+      "issue_customer_cancelled": "Customer Cancelled",
+      "issue_wrong_goods": "Wrong Items Delivered",
+      "issue_missing_goods": "Missing Items",
+      "issue_defective_goods": "Defective Items",
+      "issue_customer_refused": "Refused by Customer"
+    },
+    "table": {
+      "stt": "No.",
+      "code": "Order Code",
+      "staff": "Staff Name",
+      "customer": "Customer",
+      "total": "Total Amount",
+      "orderStatus": "Order Status",
+      "shippingStatus": "Shipping Status",
+      "paymentStatus": "Payment Status",
+      "issue": "Incidents",
+      "actions": "Actions",
+      "actionDetail": "Detail",
+      "actionPrint": "Print",
+      "actionDelete": "Delete",
+      "loadingData": "Loading order data...",
+      "noOrders": "No matching orders found."
+    },
+    "pagination": {
+      "displayRange": "Showing {{start}} - {{end}} of {{total}} orders",
+      "pageSize": "Rows per page:"
+    },
+    "modal": {
+      "detailTitle": "Order Details: {{code}}",
+      "customer": "Customer Name",
+      "phone": "Phone Number",
+      "address": "Address",
+      "payment": "Payment Method",
+      "status": "Order Status",
+      "staff": "Staff Member",
+      "note": "Notes",
+      "noNote": "None",
+      "createdAt": "Created At",
+      "tableName": "Product Name",
+      "tableQty": "Qty",
+      "tablePrice": "Price",
+      "tableSubtotal": "Total",
+      "totalAmount": "Total Amount",
+      "btnClose": "Close",
+      "btnPrint": "Print Invoice"
+    },
+    "deleteDialog": {
+      "title": "Delete Order",
+      "confirmText": "Are you sure you want to delete order {{code}}? This action cannot be undone.",
+      "btnCancel": "Cancel",
+      "btnConfirm": "Delete"
+    },
+    "alerts": {
+      "noDbIdUpdate": "This order does not have a database ID and cannot be updated.",
+      "updateFailed": "Update failed: {{message}}",
+      "noDbIdDelete": "This order does not have a database ID and cannot be deleted.",
+      "deleteFailed": "Deletion failed: {{message}}",
+      "deleteSuccess": "Order deleted successfully"
+    },
+    "receipt": {
+      "address": "No. 1 Hanoi Highway, Tang Nhon Phu, Ho Chi Minh",
+      "hotline": "Hotline: 1900 6868",
+      "title": "SALES INVOICE",
+      "staffName": "Staff Name:",
+      "orderCode": "Invoice Code:",
+      "invoiceDate": "Invoice Date:",
+      "customerName": "Customer Name:",
+      "productName": "Product Name",
+      "qty": "Quantity",
+      "total": "Total",
+      "subtotal": "Subtotal:",
+      "discount": "Discount:",
+      "payment": "Payment:",
+      "paymentMethod": "Method:",
+      "customerPaid": "Cash Paid:",
+      "change": "Change:",
+      "footer": "Thank you for shopping with us! See you again!",
+      "onlineOrder": "Online Order"
+    },
+    "returns": {
+      "defaults": {
+        "product": "Product",
+        "walkInCustomer": "Walk-in customer",
+        "noPhone": "No phone number",
+        "notUpdated": "Not updated",
+        "noDate": "N/A"
+      },
+      "issues": {
+        "none": "None",
+        "defectiveGoods": "Defective goods",
+        "wrongGoods": "Wrong goods delivered",
+        "missingGoods": "Missing goods",
+        "customerRefused": "Customer refused delivery",
+        "customerCancelled": "Customer cancelled order"
+      },
+      "statuses": {
+        "new": "New order",
+        "processing": "Processing",
+        "returned": "Returned",
+        "cancelled": "Cancelled",
+        "delivered": "Delivered"
+      },
+      "shippingStatuses": {
+        "unassigned": "Unassigned"
+      },
+      "paymentStatuses": {
+        "unpaid": "Unpaid"
+      },
+      "stats": {
+        "total": "Total returns",
+        "pending": "Pending",
+        "faultyOrWrong": "Defective / Wrong",
+        "totalRefund": "Total refund"
+      },
+      "rules": {
+        "title": "Return policy",
+        "within7DaysTitle": "Within 7 days",
+        "within7DaysDesc": "Returns are only supported for products with a purchase invoice.",
+        "managerApprovalTitle": "Manager approval required",
+        "managerApprovalDesc": "Large refunds or overdue cases require manager approval.",
+        "defectiveWrongTitle": "Defective / Wrong goods",
+        "defectiveWrongDesc": "Refund 100% of product value, excluding shipping fee."
+      },
+      "issueStats": {
+        "title": "Issue statistics",
+        "issueType": "Issue type",
+        "quantity": "Quantity"
+      },
+      "list": {
+        "title": "Return order list",
+        "searchPlaceholder": "Search order code, customer, phone, issue..."
+      },
+      "filters": {
+        "all": "All",
+        "clear": "Clear selection"
+      },
+      "table": {
+        "no": "No.",
+        "orderCode": "Order code",
+        "customer": "Customer",
+        "issue": "Issue",
+        "product": "Product",
+        "amount": "Amount",
+        "orderStatus": "Order status",
+        "createdAt": "Created at",
+        "actions": "Actions",
+        "loading": "Loading data from database...",
+        "noReturns": "There are no return orders in the system.",
+        "noFiltered": "No orders match the selected filters.",
+        "moreProducts": "+{{count}} more products"
+      },
+      "modal": {
+        "title": "Return detail – {{code}}",
+        "createdAt": "Created at",
+        "issue": "Issue",
+        "customer": "Customer",
+        "phone": "Phone number",
+        "address": "Address",
+        "payment": "Payment",
+        "shipping": "Shipping",
+        "product": "Product",
+        "quantity": "Qty",
+        "unitPrice": "Unit price",
+        "subtotal": "Subtotal",
+        "refundTotal": "Total refund",
+        "updateStatus": "Update order status",
+        "processNote": "Process note",
+        "notePlaceholder": "Enter return processing note..."
+      },
+      "actions": {
+        "refresh": "Refresh",
+        "loading": "Loading...",
+        "process": "Process",
+        "close": "Close",
+        "save": "Save",
+        "saving": "Saving..."
+      },
+      "pagination": {
+        "displayRange": "Showing {{start}} - {{end}} of {{total}} return orders",
+        "pageSize": "Rows:"
+      },
+      "alerts": {
+        "loadErrorTitle": "Load error",
+        "loadError": "Could not load data: {{message}}",
+        "missingOrderId": "This order has no ID and cannot be updated.",
+        "updateSuccess": "Return processing updated successfully!",
+        "updateFailed": "Update failed: {{message}}"
+      }
+    },
+    "reports": {
+      "defaults": {
+        "product": "Product",
+        "walkInCustomer": "Walk-in customer",
+        "staff": "Staff",
+        "noStatus": "No status",
+        "noDate": "—",
+        "noReason": "None"
+      },
+      "filters": {
+        "today": "Today",
+        "week": "7 days",
+        "month": "This month",
+        "all": "All"
+      },
+      "toolbar": {
+        "searchPlaceholder": "Search order code or customer...",
+        "loading": "Loading...",
+        "refresh": "Refresh"
+      },
+      "alerts": {
+        "loadErrorTitle": "Load error",
+        "loadError": "Could not load data: {{message}}"
+      },
+      "stats": {
+        "totalOrders": "Shift orders",
+        "revenue": "Revenue",
+        "soldItems": "Items sold",
+        "returns": "Returns"
+      },
+      "sections": {
+        "topProducts": "Best-selling products",
+        "paymentReport": "Payment report",
+        "orderList": "Order list",
+        "shiftClosing": "Shift closing"
+      },
+      "badges": {
+        "productCount": "{{count}} products",
+        "orderCount": "{{count}} orders"
+      },
+      "empty": {
+        "loading": "Loading...",
+        "noSalesData": "No sales data yet.",
+        "noPaymentTitle": "No payment data",
+        "noPaymentDesc": "Orders do not have payment records in the database yet.",
+        "noPaymentData": "No payment data.",
+        "noOrders": "No orders in this period."
+      },
+      "table": {
+        "no": "No.",
+        "product": "Product",
+        "quantity": "Qty",
+        "revenue": "Revenue",
+        "paymentMethod": "Method",
+        "orderCount": "Orders",
+        "amount": "Amount",
+        "percent": "Percent",
+        "orderCode": "Order code",
+        "customer": "Customer",
+        "total": "Total",
+        "status": "Status",
+        "createdAt": "Created at",
+        "moreProducts": "+{{count}} more items",
+        "limitNote": "Showing {{shown}} / {{total}} orders"
+      },
+      "payment": {
+        "cash": "Cash"
+      },
+      "summary": {
+        "cash": "Cash",
+        "bankCard": "Bank transfer / card",
+        "openingCash": "Opening cash",
+        "cashRevenue": "Cash revenue",
+        "bankCardRevenue": "Bank transfer / card revenue",
+        "extraIncome": "Extra income",
+        "expense": "Expenses",
+        "expectedCash": "Expected handover cash"
+      },
+      "shift": {
+        "openShift": "Shift {{id}} · {{staff}}",
+        "noOpenShift": "No open shift"
+      },
+      "transactions": {
+        "title": "Shift income / expense history ({{count}} transactions)",
+        "type": "Type",
+        "reason": "Reason",
+        "amount": "Amount",
+        "time": "Time",
+        "income": "⬆ Income",
+        "expense": "⬇ Expense"
+      },
+      "actions": {
+        "print": "Print report",
+        "refreshData": "Refresh data"
+      },
+      "print": {
+        "title": "Shift report",
+        "heading": "Shift report – Book-Store",
+        "printedAt": "Printed at",
+        "totalOrders": "Total orders",
+        "revenue": "Revenue",
+        "items": "Items"
+      }
+    }
+  },
+  "products": {
+    "stats": {
+      "total": "Total Products",
+      "inStock": "In Stock",
+      "lowStock": "Low Stock",
+      "totalValue": "Stock Value"
+    },
+    "toolbar": {
+      "searchPlaceholder": "Search by name, author...",
+      "all": "All",
+      "clearFilter": "Clear filter",
+      "refresh": "Refresh",
+      "outOfStockReport": "Low Stock Report"
+    },
+    "table": {
+      "no": "No.",
+      "name": "Product Name",
+      "type": "Type",
+      "authorBrand": "Author / Brand",
+      "category": "Category",
+      "price": "Price",
+      "stock": "Stock",
+      "status": "Status",
+      "action": "Action"
+    },
+    "status": {
+      "inStock": "In Stock",
+      "lowStock": "Low Stock",
+      "outOfStock": "Out of Stock"
+    },
+    "types": {
+      "book": "Book",
+      "stationery": "Stationery",
+      "toy": "Toy",
+      "accessory": "Accessory",
+      "schoolSupply": "School Supply",
+      "souvenir": "Souvenirs"
+    },
+    "defaults": {
+      "noName": "No name",
+      "unknown": "Unknown"
+    },
+    "actions": {
+      "detail": "Detail",
+      "close": "Close",
+      "copyList": "Copy List"
+    },
+    "modal": {
+      "detailTitle": "Product Details",
+      "id": "Product Code",
+      "reportTitle": "Restock List",
+      "reportSummary": "There are {{count}} products low or out of stock",
+      "noItems": "No products are low or out of stock."
+    },
+    "alerts": {
+      "copySuccess": "List copied to clipboard!",
+      "loadPartialError": "Some product groups failed to load: {{sources}}. Check API endpoints.",
+      "loadError": "Could not load products from database. {{message}}",
+      "loading": "Loading products from database...",
+      "noFound": "No matching products found.",
+      "dataTitle": "Data Loading Notice"
+    },
+    "pagination": {
+      "displayRange": "Showing {{start}} - {{end}} of {{total}} products",
+      "pageSize": "Rows per page:"
+    }
+  },
+  "errors": {
+    "apiError": "API Error {{status}}"
+  },
+  "promotions": {
+    "defaults": {
+      "noName": "No name",
+      "noCode": "No code",
+      "noDate": "N/A"
+    },
+    "form": {
+      "addTitle": "Add new promotion",
+      "editTitle": "Update promotion",
+      "description": "Configure discount campaigns for the system",
+      "code": "Promotion code",
+      "codePlaceholder": "Example: SUMMER2024",
+      "name": "Campaign name",
+      "namePlaceholder": "Enter campaign name",
+      "discountPercent": "Discount (%)",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Enter detailed description...",
+      "active": "Active",
+      "processing": "Processing...",
+      "createButton": "Create",
+      "updateButton": "Update",
+      "cancel": "Cancel"
+    },
+    "list": {
+      "title": "Promotion list",
+      "searchPlaceholder": "Search by code or name...",
+      "clearStatusFilter": "Clear status filter",
+      "refresh": "Refresh",
+      "loadingShort": "Loading..."
+    },
+    "status": {
+      "all": "All statuses",
+      "ongoing": "Ongoing",
+      "upcoming": "Upcoming",
+      "endingSoon": "Ending soon",
+      "expired": "Expired"
+    },
+    "table": {
+      "no": "No.",
+      "program": "Campaign",
+      "discount": "Discount",
+      "period": "Period",
+      "status": "Status",
+      "actions": "Actions",
+      "code": "Code",
+      "from": "From",
+      "to": "To",
+      "edit": "Edit",
+      "loading": "Loading promotion list...",
+      "empty": "No promotions found."
+    },
+    "pagination": {
+      "displayRange": "Showing {{start}} - {{end}} of {{total}}",
+      "pageSize": "Rows:"
+    },
+    "alerts": {
+      "loadErrorTitle": "Load error:",
+      "loadError": "Could not load promotions. {{message}}",
+      "requiredCode": "Please enter the promotion code.",
+      "requiredName": "Please enter the campaign name.",
+      "invalidDiscount": "Discount percent must be between 1 and 100.",
+      "invalidDateRange": "Start date cannot be later than end date.",
+      "createSuccess": "Promotion created successfully!",
+      "updateSuccess": "Promotion updated successfully!",
+      "saveFailed": "Failed to save promotion: {{message}}"
+    }
+  },
+  "shift": {
+    "defaults": {
+      "staff": "Staff",
+      "noDate": "—",
+      "noReason": "None"
+    },
+    "tabs": {
+      "current": "Current shift",
+      "history": "Shift history"
+    },
+    "loading": {
+      "currentShift": "Loading shift information..."
+    },
+    "open": {
+      "noShiftTitle": "No active shift",
+      "noShiftDesc": "Enter opening cash to start working",
+      "openingCash": "Opening cash (VND)",
+      "openingCashPlaceholder": "Example: 1000000",
+      "opening": "Opening shift...",
+      "openButton": "🔓 Open shift"
+    },
+    "stats": {
+      "status": "Shift status",
+      "open": "Open",
+      "openingCash": "Opening cash",
+      "todayRevenue": "Today revenue",
+      "expectedCash": "Expected handover cash"
+    },
+    "current": {
+      "infoTitle": "Shift information",
+      "shiftLabel": "Shift {{id}} · {{staff}}"
+    },
+    "summary": {
+      "openingCash": "Opening cash",
+      "cashRevenue": "Cash revenue",
+      "bankRevenue": "Bank transfer/card revenue",
+      "totalIncome": "Extra income",
+      "totalExpense": "Total expenses",
+      "expectedCash": "Expected cash"
+    },
+    "transaction": {
+      "income": "⬆ Income",
+      "expense": "⬇ Expense",
+      "incomeText": "Income",
+      "expenseText": "Expense"
+    },
+    "transactionForm": {
+      "title": "Add income / expense",
+      "reason": "Reason",
+      "amount": "Amount (VND)",
+      "incomeReasonPlaceholder": "Ex: Book exchange fee",
+      "expenseReasonPlaceholder": "Ex: Buy shopping bags",
+      "amountPlaceholder": "Enter amount"
+    },
+    "transactions": {
+      "title": "Shift income / expense history",
+      "count": "{{count}} transactions",
+      "no": "No.",
+      "type": "Type",
+      "reason": "Reason",
+      "amount": "Amount",
+      "time": "Time",
+      "actions": "Actions",
+      "empty": "No transactions in this shift yet.",
+      "totalIncome": "Income",
+      "totalExpense": "Expense",
+      "difference": "Difference"
+    },
+    "history": {
+      "title": "Shift history",
+      "shift": "Shift",
+      "staff": "Staff",
+      "openedAt": "Opened at",
+      "closedAt": "Closed at",
+      "openingCash": "Opening cash",
+      "income": "Income",
+      "expense": "Expense",
+      "transactions": "Transactions",
+      "loading": "⏳ Loading...",
+      "empty": "No closed shifts yet.",
+      "transactionCount": "{{count}} transactions"
+    },
+    "actions": {
+      "loading": "Loading...",
+      "refresh": "Refresh",
+      "saving": "Saving...",
+      "delete": "Delete",
+      "closeShift": "Close shift",
+      "closing": "Closing shift...",
+      "updateRevenue": "Update revenue",
+      "updatingRevenue": "Updating...",
+      "saveTransaction": "Save transaction"
+    },
+    "confirm": {
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "closeTitle": "Confirm shift closing",
+      "closeMessage": "Are you sure you want to close this shift?\nHandover cash: {{amount}}",
+      "deleteTransactionTitle": "Delete transaction",
+      "deleteTransactionMessage": "Delete this transaction?"
+    },
+    "alerts": {
+      "errorTitle": "Error",
+      "loadShiftError": "Error: {{message}}",
+      "missingStaff": "Could not identify staff. Please log in again.",
+      "openSuccess": "✅ Shift opened successfully!",
+      "openFailed": "Failed to open shift: {{message}}",
+      "closeSuccess": "🔒 Shift closed successfully!",
+      "closeFailed": "Failed to close shift: {{message}}",
+      "requiredReason": "Please enter a reason.",
+      "invalidAmount": "Amount must be greater than 0.",
+      "addTransactionSuccess": "✅ Added {{type}} transaction {{amount}}",
+      "addTransactionFailed": "Failed to add transaction: {{message}}",
+      "deleteTransactionSuccess": "Transaction deleted.",
+      "deleteTransactionFailed": "Delete failed: {{message}}"
+    }
+  }
+}

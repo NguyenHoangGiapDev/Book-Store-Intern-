@@ -1,0 +1,57 @@
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  outline-offset: -2px;
+}
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+::file-selector-button {
+  font: inherit;
+  -webkit-appearance: button;
+  appearance: button;
+}
+.form-control,
+.form-select,
+.form-check-input,
+.form-range {
+  appearance: none;
+}
+.form-control::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  appearance: button;
+}
+.form-control::file-selector-button {
+  -webkit-appearance: button;
+  appearance: button;
+}
+.form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.form-range::-moz-range-thumb {
+  appearance: none;
+}
+.form-check-input {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+@media print {
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

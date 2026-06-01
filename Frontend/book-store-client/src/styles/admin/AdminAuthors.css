@@ -1,0 +1,1376 @@
+/* =========================
+   Admin Authors Page
+========================= */
+
+.admin-authors-page {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.admin-authors-page *,
+.admin-authors-page *::before,
+.admin-authors-page *::after {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.admin-authors-page img,
+.admin-authors-page video,
+.admin-authors-page canvas,
+.admin-authors-page svg {
+  max-width: 100%;
+}
+
+.admin-authors-page > * {
+  max-width: 100%;
+}
+
+.admin-authors-page .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.admin-authors-page .row > [class*="col-"] {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* =========================
+   Title
+========================= */
+
+.admin-authors-page .portal-title {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  transform: none !important;
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.admin-authors-page .btn-primary-premium {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  white-space: nowrap;
+  padding: 10px 12px !important;
+  font-size: 17px;
+  box-shadow: 0 14px 28px rgba(79, 70, 229, 0.26);
+  transition: all 0.2s ease;
+}
+
+.admin-authors-page .btn-primary-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(79, 70, 229, 0.35);
+}
+
+.admin-authors-page .btn-outline-slate-modern {
+  background: #ffffff;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  min-height: 48px;
+  transition: all 0.2s ease;
+}
+
+.admin-authors-page .btn-outline-slate-modern:hover {
+  background: #f8fafc;
+  color: #4f46e5;
+  border-color: #c7d2fe;
+}
+
+/* =========================
+   Stat Cards
+========================= */
+
+.admin-authors-page .stat-card-modern {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  transition: all 0.25s ease;
+  border-radius: 18px !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin-authors-page .stat-card-modern:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 30px rgba(15, 23, 42, 0.08);
+}
+
+.admin-authors-page .stationery-stat-card {
+  min-height: 70px;
+  padding: 5px !important;
+}
+
+.admin-authors-page .icon-box-modern {
+  width: 42px;
+  height: 42px;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.admin-authors-page .stationery-stat-card .icon-box-modern {
+  width: 42px !important;
+  height: 42px !important;
+}
+
+.admin-authors-page .stationery-stat-card .value {
+  font-size: 1.25rem !important;
+  line-height: 1.1;
+  color: #0f172a;
+}
+
+.admin-authors-page .stationery-stat-card .label {
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.admin-authors-page .decoration-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+}
+
+/* =========================
+   Table Card / Search
+========================= */
+
+.admin-authors-page .stationery-table-card {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.admin-authors-page .modern-search-box {
+  position: relative;
+  width: 100%;
+  min-height: 48px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.admin-authors-page .modern-search-box:focus-within {
+  background: #ffffff;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.admin-authors-page .modern-search-box i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 1.05rem;
+}
+
+.admin-authors-page .modern-search-box input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px 12px 46px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.admin-authors-page .modern-search-box input::placeholder {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* =========================
+   Table
+========================= */
+
+.admin-authors-page .table-scroll-x {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.admin-authors-page .table-scroll-x::-webkit-scrollbar {
+  height: 8px;
+}
+
+.admin-authors-page .table-scroll-x::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.admin-authors-page .table-scroll-x::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+.admin-authors-page .table-scroll-x::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.admin-authors-page .table-modern {
+  width: 100%;
+  min-width: 900px;
+  max-width: none;
+  table-layout: fixed;
+  margin-bottom: 0;
+}
+
+.admin-authors-page .table-modern th:nth-child(1),
+.admin-authors-page .table-modern td:nth-child(1) {
+  width: 80px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.admin-authors-page .table-modern th:nth-child(2),
+.admin-authors-page .table-modern td:nth-child(2) {
+  width: 320px;
+}
+
+.admin-authors-page .table-modern th:nth-child(3),
+.admin-authors-page .table-modern td:nth-child(3) {
+  width: auto;
+}
+
+.admin-authors-page .table-modern th:nth-child(4),
+.admin-authors-page .table-modern td:nth-child(4) {
+  width: 170px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.admin-authors-page .table-modern thead th {
+  background: #f8fafc;
+  border: none;
+  border-bottom: 1px solid #eef2f7;
+  padding: 14px 16px;
+  color: #0f172a;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.admin-authors-page .table-modern tbody td {
+  padding: 14px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+.admin-authors-page .table-modern tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.admin-authors-page .table-modern tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* =========================
+   Action Buttons
+========================= */
+
+.admin-authors-page .action-col {
+  min-width: 170px;
+  width: 170px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.admin-authors-page .action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.admin-authors-page .action-btn {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.admin-authors-page .action-btn i {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.admin-authors-page .edit-btn {
+  background: #eef0ff;
+  color: #4f46e5;
+}
+
+.admin-authors-page .delete-btn {
+  background: #fff1f2;
+  color: #e11d48;
+}
+
+.admin-authors-page .action-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.85;
+}
+
+/* =========================
+   Pagination
+========================= */
+
+.admin-authors-page .pagination-container {
+  padding: 1.25rem 2rem;
+  background: #ffffff;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-authors-page .pagination-info {
+  color: #0f172a;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.admin-authors-page .pagination-nav {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.admin-authors-page .pagination-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #f1f5f9;
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 800;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.admin-authors-page .pagination-btn:hover:not(:disabled) {
+  background: #ffffff;
+  color: #6366f1;
+  border-color: #6366f1;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.12);
+}
+
+.admin-authors-page .pagination-btn.active {
+  background: #6366f1;
+  color: #ffffff;
+  border-color: #6366f1;
+  box-shadow: 0 6px 14px rgba(99, 102, 241, 0.24);
+}
+
+.admin-authors-page .pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f8fafc;
+  color: #cbd5e1;
+}
+
+/* =========================
+   Modal
+========================= */
+
+.admin-authors-page .modal-overlay-modern {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.68);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-authors-page .stationery-book-modal-card {
+  width: min(1080px, 92vw);
+  max-height: 88vh;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 28px 90px rgba(15, 23, 42, 0.35);
+}
+
+.admin-authors-page .stationery-book-modal-form {
+  display: flex;
+  flex-direction: column;
+  max-height: 88vh;
+}
+
+.admin-authors-page .stationery-book-modal-header {
+  padding: 24px 32px;
+  background: #fffbeb;
+  border-bottom: 1px solid #fef3c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-authors-page .stationery-book-modal-title {
+  margin: 0;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-authors-page .stationery-book-modal-close {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.admin-authors-page .stationery-book-modal-close:hover {
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.admin-authors-page .stationery-book-modal-body {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 0;
+  background: #ffffff;
+}
+
+.admin-authors-page .stationery-book-preview-pane {
+  padding: 40px 32px;
+  background: #f8fafc;
+  border-right: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-authors-page .stationery-book-label {
+  color: #000000;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.admin-authors-page .stationery-book-label i {
+  font-size: 14px;
+  color: #6366f1;
+}
+
+.admin-authors-page .stationery-book-form-pane {
+  padding: 40px 48px;
+  overflow-y: auto;
+}
+
+.admin-authors-page .stationery-book-image-preview {
+  width: 170px;
+  height: 230px;
+  margin: 20px auto 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.admin-authors-page .stationery-book-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-authors-page .stationery-empty-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #94a3b8;
+  font-weight: 800;
+}
+
+.admin-authors-page .stationery-empty-image i {
+  font-size: 42px;
+  color: #cbd5e1;
+}
+
+.admin-authors-page .stationery-preview-note {
+  max-width: 210px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.admin-authors-page .stationery-book-input {
+  width: 100%;
+  min-height: 54px;
+  padding: 14px 16px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.admin-authors-page .stationery-book-input::placeholder {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.admin-authors-page .stationery-book-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.admin-authors-page .stationery-book-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.admin-authors-page .stationery-book-modal-footer {
+  padding: 18px 28px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.admin-authors-page .stationery-book-btn-cancel,
+.admin-authors-page .stationery-book-btn-save {
+  min-width: 150px;
+  min-height: 52px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 900;
+  transition: all 0.2s ease;
+}
+
+.admin-authors-page .stationery-book-btn-cancel {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.admin-authors-page .stationery-book-btn-cancel:hover {
+  background: #e2e8f0;
+}
+
+.admin-authors-page .stationery-book-btn-save {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  box-shadow: 0 16px 32px rgba(79, 70, 229, 0.28);
+}
+
+.admin-authors-page .stationery-book-btn-save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(79, 70, 229, 0.38);
+}
+
+/* =========================
+   Animation
+========================= */
+
+.admin-authors-page.animate-fade-in {
+  animation: authorsFadeIn 0.25s ease-out;
+}
+
+.admin-authors-page .animate-scale-in {
+  animation: authorsScaleIn 0.22s ease-out;
+}
+
+@keyframes authorsFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes authorsScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 992px) {
+  .admin-authors-page {
+    padding: 16px 22px 24px 22px !important;
+  }
+
+  .admin-authors-page .portal-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .admin-authors-page .stationery-book-modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-authors-page .stationery-book-preview-pane {
+    display: none;
+  }
+
+  .admin-authors-page .stationery-book-modal-card {
+    width: 96vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-authors-page {
+    padding: 14px 14px 20px 14px !important;
+  }
+
+  .admin-authors-page .portal-title {
+    font-size: 1.55rem;
+  }
+
+  .admin-authors-page .stationery-book-form-pane {
+    padding: 24px !important;
+  }
+
+  .admin-authors-page .stationery-book-form-pane .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .admin-authors-page .pagination-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
+
+/* =========================
+   Shipping Print Label
+========================= */
+.print-shipping-body {
+  font-family: Arial, sans-serif;
+  padding: 24px;
+  color: #111827;
+  background-color: white;
+}
+
+.print-shipping-label {
+  max-width: 720px;
+  margin: 0 auto;
+  border: 2px solid #111827;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.print-shipping-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.print-shipping-brand {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.print-shipping-title {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.print-shipping-code {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+.print-shipping-section {
+  margin-bottom: 18px;
+}
+
+.print-shipping-section-title {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.print-shipping-box {
+  border: 1px solid #d1d5db;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.print-shipping-row {
+  display: flex;
+  gap: 16px;
+}
+
+.print-shipping-col {
+  flex: 1;
+}
+
+.print-shipping-strong {
+  font-weight: 800;
+}
+
+.print-shipping-footer {
+  border-top: 1px dashed #9ca3af;
+  margin-top: 24px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media print {
+  .print-shipping-body button {
+    display: none;
+  }
+}
+
+/* =========================
+   Admin Overview / Dashboard
+========================= */
+
+.admin-overview-welcome-card {
+  background: rgb(217, 217, 171);
+  color: #0f172a;
+}
+
+.admin-overview-shape-1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+  top: -100px;
+  right: -50px;
+}
+
+.admin-overview-shape-2 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  bottom: -50px;
+  right: 150px;
+}
+
+.admin-overview-chart-container {
+  height: 300px;
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+}
+
+.admin-overview-bar-group {
+  width: 12%;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.admin-overview-bar-val {
+  opacity: 0;
+  transform: translateY(10px);
+  position: absolute;
+  top: -35px;
+}
+
+.admin-overview-bar {
+  max-width: 40px;
+  background: linear-gradient(180deg, #4f46e5 0%, #818cf8 100%);
+  box-shadow: 0 4px 10px rgba(79,70,229,0.2);
+}
+
+.admin-overview-btn-outline {
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.admin-overview-circular-wrapper {
+  width: 180px;
+  height: 180px;
+}
+
+.ls-wide { letter-spacing: 0.8px; }
+.ls-tight { letter-spacing: -0.5px; }
+
+.circular-chart { display: block; margin: 0 auto; max-width: 100%; max-height: 250px; }
+.circle-bg { fill: none; stroke: #f1f5f9; stroke-width: 2.5; }
+.circle { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke: #4f46e5; transition: stroke-dasharray 1s ease; animation: progress 1s ease-out forwards; }
+
+@keyframes progress { 0% { stroke-dasharray: 0 100; } }
+
+.admin-authors-page .bar:hover { opacity: 0.9 !important; }
+.admin-authors-page .bar-group:hover .bar-val { opacity: 1 !important; transform: translateY(0) !important; }
+.admin-authors-page .stationery-stat-card { transition: all 0.3s ease; cursor: pointer; }
+.admin-authors-page .stationery-stat-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.05) !important; }
+
+.drop-shadow-md { filter: drop-shadow(0 4px 6px rgba(79, 70, 229, 0.2)); }
+.bg-indigo-subtle { background-color: #e0e7ff; color: #4338ca; }
+
+.admin-authors-page .table-modern.table-dashboard th:nth-child(1),
+.admin-authors-page .table-modern.table-dashboard td:nth-child(1) { width: 60px; text-align: center; }
+.admin-authors-page .table-modern.table-dashboard th:nth-child(2),
+.admin-authors-page .table-modern.table-dashboard td:nth-child(2) { width: 120px; text-align: left; }
+.admin-authors-page .table-modern.table-dashboard th:nth-child(3),
+.admin-authors-page .table-modern.table-dashboard td:nth-child(3) { width: 300px; text-align: left; }
+.admin-authors-page .table-modern.table-dashboard th:nth-child(4),
+.admin-authors-page .table-modern.table-dashboard td:nth-child(4) { width: auto; text-align: left; }
+.admin-authors-page .table-modern.table-dashboard th:nth-child(5),
+.admin-authors-page .table-modern.table-dashboard td:nth-child(5) { width: 160px; text-align: left; }
+.admin-authors-page .table-modern.table-dashboard th:nth-child(6),
+.admin-authors-page .table-modern.table-dashboard td:nth-child(6) { width: 120px; text-align: right; }
+
+/* =========================
+   Inventory Table Custom
+   ========================= */
+.inventory-table th, .inventory-table td {
+  width: auto !important;
+  text-align: left !important;
+}
+.inventory-table th:nth-child(1), .inventory-table td:nth-child(1) {
+  width: 80px !important;
+  text-align: center !important;
+}
+.inventory-table th:nth-child(2), .inventory-table td:nth-child(2) {
+  width: 140px !important;
+}
+.inventory-table th:nth-child(5), .inventory-table td:nth-child(5) {
+  width: 120px !important;
+  text-align: center !important;
+}
+.inventory-table th:nth-child(6), .inventory-table td:nth-child(6) {
+  width: 140px !important;
+  text-align: right !important;
+}
+.inventory-table th:nth-child(7), .inventory-table td:nth-child(7) {
+  width: 160px !important;
+  text-align: center !important;
+}
+.inventory-table .action-col {
+  width: 220px !important;
+  text-align: center !important;
+}
+.inventory-table .action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+/* =========================
+   Admin Recruitments Page
+========================= */
+
+
+
+.admin-recruitments-page .stat-card-modern {
+  min-height: 78px;
+}
+
+.admin-recruitments-page .stationery-table-card {
+  margin-top: 0 !important;
+}
+
+/* Override table width because authors table has only 4 columns,
+   but recruitments table has 7 columns */
+.admin-recruitments-page .recruitments-table {
+  min-width: 1280px;
+  table-layout: fixed;
+}
+
+.admin-recruitments-page .recruitments-table th,
+.admin-recruitments-page .recruitments-table td {
+  text-align: left !important;
+  vertical-align: middle;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(1),
+.admin-recruitments-page .recruitments-table td:nth-child(1) {
+  width: 70px !important;
+  text-align: center !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(2),
+.admin-recruitments-page .recruitments-table td:nth-child(2) {
+  width: 280px !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(3),
+.admin-recruitments-page .recruitments-table td:nth-child(3) {
+  width: 210px !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(4),
+.admin-recruitments-page .recruitments-table td:nth-child(4) {
+  width: 300px !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(5),
+.admin-recruitments-page .recruitments-table td:nth-child(5) {
+  width: 170px !important;
+  white-space: nowrap;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(6),
+.admin-recruitments-page .recruitments-table td:nth-child(6) {
+  width: 150px !important;
+  text-align: center !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(7),
+.admin-recruitments-page .recruitments-table td:nth-child(7) {
+  width: 230px !important;
+  text-align: center !important;
+}
+
+.admin-recruitments-page .recruitments-table .action-buttons {
+  justify-content: center;
+  gap: 8px;
+}
+
+.admin-recruitments-page .recruitments-table .status-select {
+  width: 145px;
+  min-height: 42px;
+  padding: 8px 10px;
+  font-size: 13px;
+  border-radius: 12px;
+}
+
+
+.admin-recruitments-page .admin-recruitments-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+.admin-recruitments-page .admin-recruitments-toolbar .btn-outline-slate-modern {
+  min-width: 170px;
+  min-height: 56px;
+}
+
+.admin-recruitments-page .admin-recruitments-stats-row {
+  margin-bottom: 18px !important;
+}
+
+.admin-recruitments-page .admin-recruitments-table-card {
+  margin-top: 0 !important;
+}
+
+/* Làm stat card tuyển dụng giống kích thước trang tác giả */
+.admin-recruitments-page .stationery-stat-card {
+  min-height: 70px !important;
+  padding: 5px !important;
+}
+
+/* Bảng tuyển dụng có 7 cột, nên không dùng width 4 cột của bảng tác giả */
+.admin-recruitments-page .recruitments-table {
+  width: 100%;
+  min-width: 1280px;
+  table-layout: fixed;
+}
+
+.admin-recruitments-page .recruitments-table th,
+.admin-recruitments-page .recruitments-table td {
+  text-align: left !important;
+  vertical-align: middle;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(1),
+.admin-recruitments-page .recruitments-table td:nth-child(1) {
+  width: 70px !important;
+  text-align: center !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(2),
+.admin-recruitments-page .recruitments-table td:nth-child(2) {
+  width: 285px !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(3),
+.admin-recruitments-page .recruitments-table td:nth-child(3) {
+  width: 210px !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(4),
+.admin-recruitments-page .recruitments-table td:nth-child(4) {
+  width: 320px !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(5),
+.admin-recruitments-page .recruitments-table td:nth-child(5) {
+  width: 180px !important;
+  white-space: nowrap;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(6),
+.admin-recruitments-page .recruitments-table td:nth-child(6) {
+  width: 150px !important;
+  text-align: center !important;
+}
+
+.admin-recruitments-page .recruitments-table th:nth-child(7),
+.admin-recruitments-page .recruitments-table td:nth-child(7) {
+  width: 230px !important;
+  text-align: center !important;
+}
+
+.admin-recruitments-page .recruitments-table .action-buttons {
+  justify-content: center;
+  gap: 8px;
+}
+
+.admin-recruitments-page .status-select {
+  width: 145px !important;
+  min-height: 42px !important;
+  padding: 8px 10px !important;
+  font-size: 13px !important;
+  border-radius: 12px !important;
+}
+/* =========================
+   Recruitments Pagination
+========================= */
+
+.admin-recruitments-page .pagination-size-select {
+  width: 72px !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  padding: 0 12px !important;
+  border-radius: 14px !important;
+  border: 1px solid #e2e8f0 !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.admin-recruitments-page .pagination-size-select:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12) !important;
+}
+.admin-recruitments-page .pagination-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-recruitments-page .pagination-info {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+/* =========================
+   Recruitment Status Filter Clear Button
+========================= */
+
+.admin-recruitments-page .status-filter-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.admin-recruitments-page .status-filter-select {
+  padding-right: 82px !important;
+}
+
+.admin-recruitments-page .status-filter-clear {
+  position: absolute;
+  top: 50%;
+  right: 42px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #475569;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.admin-recruitments-page .status-filter-clear:hover {
+  background: #334155;
+}
+
+.admin-recruitments-page .status-filter-clear i {
+  font-size: 9px;
+  line-height: 1;
+}
+
+
+.admin-recruitments-page .status-filter-clear i {
+  font-size: 13px;
+  line-height: 1;
+}
+/* =========================
+   Inventory Filter Clear Button
+========================= */
+
+.admin-authors-page .inventory-filter-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.admin-authors-page .inventory-filter-select {
+  min-height: 48px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-right: 72px !important;
+}
+
+.admin-authors-page .inventory-filter-clear {
+  position: absolute;
+  top: 50%;
+  right: 42px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #475569;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.admin-authors-page .inventory-filter-clear:hover {
+  background: #334155;
+}
+
+.admin-authors-page .inventory-filter-clear span {
+  font-size: 13px;
+  line-height: 1;
+  transform: translateY(-0.5px);
+}
+.admin-recruitments-page .status-filter-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.admin-recruitments-page .status-filter-select {
+  padding-right: 72px !important;
+}
+
+.admin-recruitments-page .status-filter-clear {
+  position: absolute;
+  top: 50%;
+  right: 42px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #475569;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  line-height: 1;
+}
+
+.admin-recruitments-page .status-filter-clear:hover {
+  background: #334155;
+}
+
+.admin-recruitments-page .status-filter-clear span {
+  font-size: 13px;
+  line-height: 1;
+}
+/* =========================
+   Inventory Filter Layout
+========================= */
+
+.admin-authors-page .inventory-filter-row {
+  display: grid;
+  grid-template-columns: minmax(320px, 1.2fr) minmax(320px, 1fr);
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.admin-authors-page .inventory-search-area,
+.admin-authors-page .inventory-category-area,
+.admin-authors-page .inventory-refresh-area {
+  min-width: 0;
+}
+
+.admin-authors-page .inventory-search-box {
+  height: 54px;
+}
+
+.admin-authors-page .inventory-category-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-authors-page .inventory-filter-label {
+  margin: 0;
+  white-space: nowrap;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.admin-authors-page .inventory-filter-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-authors-page .inventory-filter-select {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 18px;
+  padding-right: 72px !important;
+  background-color: #ffffff;
+}
+
+.admin-authors-page .inventory-filter-select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.admin-authors-page .inventory-filter-clear {
+  position: absolute;
+  top: 50%;
+  right: 42px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #475569;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  line-height: 1;
+}
+
+.admin-authors-page .inventory-filter-clear:hover {
+  background: #334155;
+}
+
+.admin-authors-page .inventory-filter-clear span {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.admin-authors-page .inventory-refresh-btn {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 14px;
+  font-weight: 900;
+}
+
+@media (max-width: 992px) {
+  .admin-authors-page .inventory-filter-row {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-authors-page .inventory-category-area {
+    align-items: stretch;
+  }
+}

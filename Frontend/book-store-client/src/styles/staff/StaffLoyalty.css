@@ -1,0 +1,496 @@
+/* ================= STAFF LOYALTY PAGE ================= */
+
+.staff-loyalty-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 48px;
+}
+
+/* ================= LOYALTY STATS - GIỐNG QUẢN LÝ ĐƠN HÀNG ================= */
+
+.staff-loyalty-page .staff-stats-compact,
+.staff-loyalty-stats {
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.staff-loyalty-page .staff-stats-compact .staff-card,
+.staff-loyalty-stats .staff-card {
+  padding: 14px 18px;
+  border-radius: 16px;
+}
+
+.staff-loyalty-page .staff-stats-compact .staff-stat,
+.staff-loyalty-stats .staff-stat {
+  min-height: 82px;
+  gap: 12px;
+}
+
+.staff-loyalty-page .staff-stats-compact .staff-stat__icon,
+.staff-loyalty-stats .staff-stat__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.staff-loyalty-page .staff-stats-compact .staff-stat p,
+.staff-loyalty-stats .staff-stat p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.staff-loyalty-page .staff-stats-compact .staff-stat h3,
+.staff-loyalty-stats .staff-stat h3 {
+  margin: 3px 0 0;
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* Khối nội dung ngay dưới 4 thẻ */
+.staff-loyalty-page .staff-stats-compact + .staff-grid,
+.staff-loyalty-page .staff-loyalty-stats + .staff-grid {
+  margin-top: 0;
+}
+
+/* ================= LOYALTY MAIN GRID ================= */
+
+.staff-loyalty-page > .staff-grid--2 {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: start;
+}
+
+/* ================= LOYALTY FORM CARD ================= */
+
+.staff-loyalty-selected-box {
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+}
+
+.staff-loyalty-selected-empty {
+  padding: 12px 0;
+  color: #64748b;
+  font-size: 14px;
+  text-align: center;
+}
+
+.staff-loyalty-selected-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.staff-loyalty-selected-header strong {
+  color: #0f172a;
+  font-size: 16px;
+}
+
+.staff-loyalty-cancel-btn {
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.staff-loyalty-cancel-btn:hover {
+  text-decoration: underline;
+}
+
+.staff-loyalty-selected-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.staff-loyalty-selected-info p {
+  margin: 0;
+}
+
+.staff-loyalty-rank {
+  color: #f59e0b;
+}
+
+.staff-loyalty-current-points {
+  color: #10b981;
+  font-size: 18px;
+}
+
+.staff-loyalty-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.staff-loyalty-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.staff-loyalty-equivalent {
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.staff-loyalty-equivalent strong {
+  color: #ef4444;
+}
+
+.staff-loyalty-submit-btn {
+  margin-top: 8px;
+}
+
+/* ================= LOYALTY CUSTOMER LIST ================= */
+
+.staff-loyalty-list-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-loyalty-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.staff-loyalty-search {
+  position: relative;
+  flex: 1;
+}
+
+.staff-loyalty-search .staff-input {
+  padding-left: 42px;
+  padding-right: 38px;
+}
+
+.staff-loyalty-search-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #64748b;
+  pointer-events: none;
+}
+
+.staff-loyalty-clear-search {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.staff-loyalty-clear-search:hover {
+  color: #ef4444;
+}
+
+/* ================= LOYALTY TABLE ================= */
+
+.staff-loyalty-table .staff-table th,
+.staff-loyalty-table .staff-table td {
+  vertical-align: middle;
+}
+
+.staff-loyalty-col-index,
+.staff-loyalty-col-points,
+.staff-loyalty-col-action {
+  text-align: center;
+}
+
+.staff-loyalty-col-spent {
+  text-align: right;
+}
+
+.staff-loyalty-index {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.staff-loyalty-customer-name {
+  color: #0f172a;
+  font-weight: 900;
+}
+
+.staff-loyalty-customer-phone {
+  margin-top: 3px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.staff-loyalty-total-spent {
+  color: #475569;
+  font-weight: 800;
+  text-align: right;
+}
+
+.staff-loyalty-points {
+  color: #10b981;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.staff-loyalty-row-selected {
+  background: #f0fdf4;
+}
+
+/* ================= RANK BADGES ================= */
+
+.staff-loyalty-rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.staff-loyalty-rank-badge--diamond {
+  background: #e0e7ff;
+  color: #4f46e5;
+}
+
+.staff-loyalty-rank-badge--gold {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.staff-loyalty-rank-badge--silver {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.staff-loyalty-rank-badge--bronze {
+  background: #fffbeb;
+  color: #b45309;
+}
+
+/* ================= PAGINATION ================= */
+
+.staff-loyalty-pagination {
+  margin-top: 16px;
+  padding: 14px 0 0;
+  border-top: 1px solid #eef2f7;
+}
+
+.staff-loyalty-pagination-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.staff-loyalty-pagination-info {
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.staff-loyalty-pagination-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.staff-loyalty-page-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.staff-loyalty-page-size span {
+  color: #334155;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.staff-loyalty-page-size select {
+  width: 75px;
+  padding: 6px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 800;
+  outline: none;
+}
+
+.staff-loyalty-page-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.staff-loyalty-page-btn {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #475569;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff-loyalty-page-btn:hover:not(:disabled) {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.staff-loyalty-page-btn.active {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+.staff-loyalty-page-btn:disabled {
+  color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.staff-loyalty-page-dots {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  color: #94a3b8;
+  font-weight: 900;
+}
+
+/* ================= ERROR ================= */
+
+.staff-loyalty-error {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid #f87171;
+  border-radius: 12px;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+  .staff-loyalty-page > .staff-grid--2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .staff-loyalty-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .staff-loyalty-pagination-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .staff-loyalty-pagination-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .staff-loyalty-page-size,
+  .staff-loyalty-page-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .staff-loyalty-page .staff-stats-compact,
+  .staff-loyalty-stats {
+    grid-template-columns: 1fr;
+  }
+}
+/* ================= LOYALTY SEARCH TOOLBAR FIX ================= */
+
+.staff-loyalty-toolbar,
+.staff-toolbar {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* Ô chứa input tìm kiếm */
+.staff-loyalty-search,
+.staff-search {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Input tìm kiếm */
+.staff-loyalty-search .staff-input,
+.staff-search .staff-input {
+  width: 100%;
+  height: 52px;
+  padding-left: 44px;
+  padding-right: 38px;
+}
+
+/* Icon kính lúp */
+.staff-loyalty-search-icon,
+.staff-search__icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Nút clear x */
+.staff-loyalty-clear-search {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* Nút Làm mới */
+.staff-loyalty-toolbar .staff-btn,
+.staff-toolbar .staff-btn {
+  height: 52px;
+  width: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}

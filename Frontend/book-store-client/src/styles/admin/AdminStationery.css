@@ -1,0 +1,1554 @@
+/* =========================
+   Prevent horizontal overflow
+========================= */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.admin-stationery-portal * {
+  min-width: 0;
+}
+
+.admin-stationery-portal img,
+.admin-stationery-portal video,
+.admin-stationery-portal canvas,
+.admin-stationery-portal svg {
+  max-width: 100%;
+}
+/* =========================
+   Admin Stationery Portal
+========================= */
+
+.admin-stationery-portal {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding-top: 0;
+}
+
+.admin-stationery-portal *,
+.admin-stationery-portal *::before,
+.admin-stationery-portal *::after {
+  box-sizing: border-box;
+}
+
+.admin-stationery-portal > * {
+  max-width: 100%;
+}
+
+/* Fix Bootstrap row negative margin */
+.admin-stationery-portal .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.admin-stationery-portal .row > [class*="col-"] {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* =========================
+   Typography
+========================= */
+
+.admin-stationery-portal .portal-title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.admin-stationery-portal .btn-primary-premium {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  white-space: nowrap;
+  padding: 10px 10px 10px 12px !important;
+  font-size: 0.85rem;
+  box-shadow: 0 14px 28px rgba(79, 70, 229, 0.26);
+  transition: all 0.2s ease;
+}
+
+.admin-stationery-portal .btn-primary-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(79, 70, 229, 0.35);
+}
+
+.admin-stationery-portal .btn-outline-slate-modern {
+  background: #ffffff;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  min-height: 48px;
+  transition: all 0.2s ease;
+}
+
+.admin-stationery-portal .btn-outline-slate-modern:hover {
+  background: #f8fafc;
+  color: #4f46e5;
+  border-color: #c7d2fe;
+}
+
+/* =========================
+   Stat Cards
+========================= */
+
+.admin-stationery-portal .stat-card-modern {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  transition: all 0.25s ease;
+  border-radius: 18px !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08) !important;
+  position: relative;
+  overflow: hidden;
+}
+.admin-stationery-portal .stat-card-modern:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 30px rgba(15, 23, 42, 0.08);
+}
+
+.admin-stationery-portal .stationery-stat-card { /* Thẻ thống kê văn phòng phẩm */
+  min-height: 70px; /* Đảm bảo chiều cao nhất quán cho tất cả các thẻ thống kê */
+  padding: 5px !important; /* Giảm padding để tạo thêm không gian cho nội dung */
+}
+
+.admin-stationery-portal .stationery-stat-card .icon-box-modern {
+  width: 42px !important;
+  height: 42px !important;
+}
+
+.admin-stationery-portal .stationery-stat-card .value {
+  font-size: 1.25rem !important;
+  line-height: 1.1;
+  color: #0f172a;
+}
+
+.admin-stationery-portal .stationery-stat-card .label { /* Thẻ nhãn trong thẻ thống kê */
+  font-size: 0.80rem; /* Kích thước chữ trong 4 thẻ */ 
+  line-height: 1.2; /* Tăng line-height để cải thiện khả năng đọc khi font nhỏ hơn */ 
+}
+
+.admin-stationery-portal .decoration-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+}
+
+/* Evenly distribute stat cards across the row */
+.admin-stationery-portal .stats-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between; /* distribute available space evenly */
+}
+.admin-stationery-portal .stats-row > .col-lg-3,
+.admin-stationery-portal .stats-row > .col-md-6 {
+  /* let each stat card flex equally to fill the row and keep equal gutters */
+  flex: 1 1 0;
+  max-width: none;
+  min-width: 200px; /* keeps reasonable sizing on smaller widths */
+}
+
+@media (max-width: 992px) {
+  .admin-stationery-portal .stats-row > .col-lg-3,
+  .admin-stationery-portal .stats-row > .col-md-6 {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-stationery-portal .stats-row > .col-lg-3,
+  .admin-stationery-portal .stats-row > .col-md-6 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   Filter / Search
+========================= */
+
+.admin-stationery-portal .stationery-table-card {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.admin-stationery-portal .modern-search-box {
+  position: relative;
+  width: 100%;
+  min-height: 48px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.admin-stationery-portal .modern-search-box:focus-within {
+  background: #ffffff;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.admin-stationery-portal .modern-search-box i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 1.05rem;
+}
+
+.admin-stationery-portal .modern-search-box input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px 12px 46px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.admin-stationery-portal .modern-search-box input::placeholder {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.admin-stationery-portal .modern-select,
+.admin-stationery-portal .form-select-modern {
+  min-height: 48px;
+  padding: 12px 15px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  color: #334155;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-stationery-portal .modern-select:focus,
+.admin-stationery-portal .form-select-modern:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+/* =========================
+   Table
+========================= */
+
+.admin-stationery-portal .table-scroll-x {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.admin-stationery-portal .table-scroll-x::-webkit-scrollbar {
+  height: 8px;
+}
+
+.admin-stationery-portal .table-scroll-x::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.admin-stationery-portal .table-scroll-x::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+.admin-stationery-portal .table-scroll-x::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.admin-stationery-portal .table-modern {
+  width: 100%;
+  min-width: 1200px; /* match books table minimum width */
+  max-width: none;
+  table-layout: fixed;
+  margin-bottom: 0;
+}
+
+/* Scoped column widths similar to books layout */
+.admin-stationery-portal .table-modern th:nth-child(1),
+.admin-stationery-portal .table-modern td:nth-child(1) {
+  width: 60px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.admin-stationery-portal .table-modern th:nth-child(2),
+.admin-stationery-portal .table-modern td:nth-child(2) {
+  width: 280px;
+}
+
+.admin-stationery-portal .table-modern th:nth-child(3),
+.admin-stationery-portal .table-modern td:nth-child(3) {
+  width: 200px;
+}
+
+.admin-stationery-portal .table-modern th:nth-child(4),
+.admin-stationery-portal .table-modern td:nth-child(4) {
+  width: 180px;
+}
+
+.admin-stationery-portal .table-modern th:nth-child(5),
+.admin-stationery-portal .table-modern td:nth-child(5) {
+  width: 140px;
+}
+
+.admin-stationery-portal .table-modern th:nth-child(6),
+.admin-stationery-portal .table-modern td:nth-child(6) {
+  width: 100px;
+}
+
+.admin-stationery-portal .table-modern th:nth-child(7),
+.admin-stationery-portal .table-modern td:nth-child(7) {
+  width: 140px;
+}
+
+.admin-stationery-portal .table-modern th:nth-child(8),
+.admin-stationery-portal .table-modern td:nth-child(8) {
+  width: 180px;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.admin-stationery-portal .table-modern thead th {
+  background: #f8fafc;
+  border: none;
+  border-bottom: 1px solid #eef2f7;
+  padding: 14px 16px;
+  color: #0f172a;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.admin-stationery-portal .table-modern tbody td {
+  padding: 14px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+.admin-stationery-portal .table-modern tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.admin-stationery-portal .table-modern tbody tr:hover {
+  background: #f8fafc;
+}
+
+.admin-stationery-portal .item-preview {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-stationery-portal .item-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-stationery-portal .cat-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 6px 14px;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #4f46e5;
+  border: 1px solid #e8edff;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.admin-stationery-portal .text-indigo {
+  color: #4f46e5 !important;
+}
+
+.admin-stationery-portal .stock-text-success {
+  color: #10b981 !important;
+}
+
+.admin-stationery-portal .stock-text-warning {
+  color: #f59e0b !important;
+}
+
+.admin-stationery-portal .stock-text-danger {
+  color: #e11d48 !important;
+}
+
+.admin-stationery-portal .status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.admin-stationery-portal .status-pill.available {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.admin-stationery-portal .status-pill.low {
+  background: #fff7ed;
+  color: #f59e0b;
+}
+
+.admin-stationery-portal .status-pill.out {
+  background: #fff1f2;
+  color: #e11d48;
+}
+
+/* =========================
+   Action Buttons
+========================= */
+
+.admin-stationery-portal .btn-action-modern {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.admin-stationery-portal .btn-action-modern.edit {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.admin-stationery-portal .btn-action-modern.edit:hover {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.admin-stationery-portal .btn-action-modern.delete {
+  background: #fff1f2;
+  color: #e11d48;
+}
+
+.admin-stationery-portal .btn-action-modern.delete:hover {
+  background: #e11d48;
+  color: #ffffff;
+}
+
+/* =========================
+   Pagination
+========================= */
+
+.admin-stationery-portal .pagination-modern .page-link {
+  min-width: 38px;
+  min-height: 38px;
+  color: #475569;
+  background: #ffffff;
+  font-weight: 800;
+}
+
+.admin-stationery-portal .pagination-modern .page-item.active .page-link {
+  color: #ffffff;
+  background: #4f46e5;
+}
+
+.admin-stationery-portal .pagination-modern .page-item.disabled .page-link {
+  color: #cbd5e1;
+  background: #f8fafc;
+  cursor: not-allowed;
+}
+
+/* =========================
+   Modal
+========================= */
+
+.admin-stationery-portal .modal-overlay-modern {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.68);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-stationery-portal .modal-content-modern {
+  width: min(900px, 96vw);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow:
+    0 24px 60px rgba(15, 23, 42, 0.24),
+    0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+.admin-stationery-portal .modal-header-modern {
+  background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-stationery-portal .modal-body-modern {
+  max-height: calc(90vh - 82px);
+}
+
+.admin-stationery-portal .preview-pane-modern {
+  min-height: 520px;
+  padding: 28px 22px;
+  background: #f8fafc;
+  border-right: 1px solid #e5e7eb;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-stationery-portal .modal-image-preview {
+  width: 170px;
+  aspect-ratio: 1 / 1;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.admin-stationery-portal .modal-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-stationery-portal .modal-image-preview i {
+  font-size: 3rem;
+  color: #cbd5e1;
+}
+
+.admin-stationery-portal .form-pane-modern {
+  padding: 28px;
+}
+
+.admin-stationery-portal .label-modern {
+  color: #334155;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 8px;
+}
+
+.admin-stationery-portal .label-modern i {
+  color: #6366f1;
+}
+
+.admin-stationery-portal .form-control-modern {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 15px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.admin-stationery-portal .form-control-modern::placeholder {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.admin-stationery-portal .form-control-modern:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.admin-stationery-portal textarea.form-control-modern {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.admin-stationery-portal .input-group-modern {
+  position: relative;
+}
+
+.admin-stationery-portal .input-group-modern input {
+  padding-right: 44px;
+}
+
+.admin-stationery-portal .input-group-modern i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.admin-stationery-portal .btn-slate-modern,
+.admin-stationery-portal .btn-primary-modern {
+  min-height: 46px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 900;
+  transition: all 0.2s ease;
+}
+
+.admin-stationery-portal .btn-slate-modern {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.admin-stationery-portal .btn-slate-modern:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.admin-stationery-portal .btn-primary-modern {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.25);
+}
+
+.admin-stationery-portal .btn-primary-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(79, 70, 229, 0.35);
+}
+
+/* =========================
+   Animation
+========================= */
+
+.admin-stationery-portal.animate-fade-in {
+  animation: stationeryFadeIn 0.25s ease-out;
+}
+
+.admin-stationery-portal .animate-slide-up {
+  animation: stationerySlideUp 0.25s ease-out;
+}
+
+.admin-stationery-portal .animate-scale-in {
+  animation: stationeryScaleIn 0.22s ease-out;
+}
+
+@keyframes stationeryFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stationerySlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stationeryScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 992px) {
+  .admin-stationery-portal {
+    padding: 16px 22px 24px 22px !important;
+  }
+
+  .admin-stationery-portal .portal-title {
+    font-size: 1.9rem;
+  }
+
+  .admin-stationery-portal .preview-pane-modern {
+    display: none !important;
+  }
+
+  .admin-stationery-portal .form-pane-modern {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .admin-stationery-portal {
+    padding: 14px 14px 20px 14px !important;
+  }
+
+  .admin-stationery-portal .portal-title {
+    font-size: 1.55rem;
+  }
+}
+.admin-stationery-portal .portal-title {
+  margin-left: 0 !important;
+  transform: none !important;
+}
+/* =========================
+   Stationery Detail Modal
+========================= */
+
+.admin-stationery-portal .btn-action-modern.view {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.admin-stationery-portal .btn-action-modern.view:hover {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.admin-stationery-portal .stationery-detail-modal {
+  width: min(980px, 92vw);
+  max-height: 88vh;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 28px 90px rgba(15, 23, 42, 0.36);
+}
+
+.admin-stationery-portal .stationery-detail-header {
+  padding: 24px 28px;
+  background: #fefce8;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.admin-stationery-portal .stationery-detail-title {
+  margin: 0;
+  color: #020617;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.admin-stationery-portal .stationery-detail-subtitle {
+  margin: 6px 0 0;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.admin-stationery-portal .stationery-detail-close {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.admin-stationery-portal .stationery-detail-close:hover {
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.admin-stationery-portal .stationery-detail-body {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  padding: 28px;
+  max-height: 58vh;
+  overflow-y: auto;
+}
+
+.admin-stationery-portal .stationery-detail-image-box {
+  width: 100%;
+  min-height: 330px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.admin-stationery-portal .stationery-detail-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-stationery-portal .stationery-detail-empty-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  color: #94a3b8;
+  font-weight: 800;
+}
+
+.admin-stationery-portal .stationery-detail-empty-image i {
+  font-size: 48px;
+  color: #cbd5e1;
+}
+
+.admin-stationery-portal .stationery-detail-info {
+  min-width: 0;
+}
+
+.admin-stationery-portal .stationery-detail-name {
+  margin: 0 0 20px;
+  color: #020617;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.admin-stationery-portal .stationery-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.admin-stationery-portal .stationery-detail-item {
+  padding: 15px 16px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.admin-stationery-portal .stationery-detail-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-stationery-portal .stationery-detail-item strong {
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.admin-stationery-portal .stationery-detail-description {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.admin-stationery-portal .stationery-detail-description p {
+  margin: 0;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.admin-stationery-portal .stationery-detail-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.admin-stationery-portal .stationery-detail-meta div {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px dashed #cbd5e1;
+}
+
+.admin-stationery-portal .stationery-detail-meta span {
+  display: block;
+  margin-bottom: 6px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.admin-stationery-portal .stationery-detail-meta strong {
+  color: #0f172a;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.admin-stationery-portal .stationery-detail-footer {
+  padding: 18px 28px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.admin-stationery-portal .stationery-detail-btn-cancel,
+.admin-stationery-portal .stationery-detail-btn-edit {
+  width: 170px;
+  height: 52px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.admin-stationery-portal .stationery-detail-btn-cancel {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.admin-stationery-portal .stationery-detail-btn-cancel:hover {
+  background: #e2e8f0;
+}
+
+.admin-stationery-portal .stationery-detail-btn-edit {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  box-shadow: 0 16px 32px rgba(79, 70, 229, 0.28);
+}
+
+.admin-stationery-portal .stationery-detail-btn-edit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(79, 70, 229, 0.38);
+}
+
+@media (max-width: 900px) {
+  .admin-stationery-portal .stationery-detail-body {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-stationery-portal .stationery-detail-image-box {
+    min-height: 240px;
+  }
+
+  .admin-stationery-portal .stationery-detail-grid,
+  .admin-stationery-portal .stationery-detail-meta {
+    grid-template-columns: 1fr;
+  }
+}
+.admin-stationery-portal .stationery-filter-select-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.admin-stationery-portal .stationery-filter-select {
+  width: 100%;
+  padding-right: 72px !important;
+}
+.admin-stationery-portal .stationery-filter-clear-btn {
+  position: absolute !important;
+  top: 50% !important;
+  right: 42px !important;
+  transform: translateY(-50%) !important;
+
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #475569;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+.admin-stationery-portal .stationery-filter-clear-btn:hover {
+  background: #cbd5e1;
+  color: #0f172a;
+}
+/* =========================
+   Fixed Stationery Add/Edit Modal
+========================= */
+
+.admin-stationery-portal .modal-overlay-modern {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.68);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-stationery-portal .stationery-book-modal-card {
+  width: min(1080px, 92vw);
+  max-height: 88vh;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 28px 90px rgba(15, 23, 42, 0.35);
+}
+
+.admin-stationery-portal .stationery-book-modal-form {
+  display: flex;
+  flex-direction: column;
+  max-height: 88vh;
+}
+
+.admin-stationery-portal .stationery-book-modal-header {
+  padding: 24px 32px;
+  background: #fffbeb;
+  border-bottom: 1px solid #fef3c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-stationery-portal .stationery-book-modal-title {
+  margin: 0;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-stationery-portal .stationery-book-modal-close {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.admin-stationery-portal .stationery-book-modal-close:hover {
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.admin-stationery-portal .stationery-book-modal-body {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 0;
+  background: #ffffff;
+}
+
+.admin-stationery-portal .stationery-book-preview-pane {
+  padding: 40px 32px;
+  background: #f8fafc;
+  border-right: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-stationery-portal .stationery-book-label {
+  color: #4338ca;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.admin-stationery-portal .stationery-book-label i {
+  font-size: 14px;
+  color: #6366f1;
+}
+
+.admin-stationery-portal .stationery-book-form-pane {
+  padding: 40px 48px;
+  overflow-y: auto;
+}
+
+.admin-stationery-portal .stationery-book-image-preview {
+  width: 170px;
+  height: 230px;
+  margin: 20px auto 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.admin-stationery-portal .stationery-book-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-stationery-portal .stationery-empty-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #94a3b8;
+  font-weight: 800;
+}
+
+.admin-stationery-portal .stationery-empty-image i {
+  font-size: 42px;
+  color: #cbd5e1;
+}
+
+.admin-stationery-portal .stationery-preview-note {
+  max-width: 210px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.admin-stationery-portal .stationery-book-input {
+  width: 100%;
+  min-height: 54px;
+  padding: 14px 16px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.admin-stationery-portal .stationery-book-input::placeholder {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.admin-stationery-portal .stationery-book-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.admin-stationery-portal select.stationery-book-input {
+  cursor: pointer;
+}
+
+.admin-stationery-portal .stationery-price-input-wrap {
+  position: relative;
+}
+
+.admin-stationery-portal .stationery-price-input {
+  padding-right: 58px;
+}
+
+.admin-stationery-portal .stationery-price-input-wrap span {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.admin-stationery-portal .stationery-book-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.admin-stationery-portal .stationery-book-modal-footer {
+  padding: 18px 28px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.admin-stationery-portal .stationery-book-btn-cancel,
+.admin-stationery-portal .stationery-book-btn-save {
+  min-width: 150px;
+  min-height: 52px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 900;
+  transition: all 0.2s ease;
+}
+
+.admin-stationery-portal .stationery-book-btn-cancel {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.admin-stationery-portal .stationery-book-btn-cancel:hover {
+  background: #e2e8f0;
+}
+
+.admin-stationery-portal .stationery-book-btn-save {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  box-shadow: 0 16px 32px rgba(79, 70, 229, 0.28);
+}
+
+.admin-stationery-portal .stationery-book-btn-save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(79, 70, 229, 0.38);
+}
+
+@media (max-width: 900px) {
+  .admin-stationery-portal .stationery-book-modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-stationery-portal .stationery-book-preview-pane {
+    display: none;
+  }
+
+  .admin-stationery-portal .stationery-book-modal-card {
+    width: 96vw;
+  }
+}
+.admin-stationery-portal .stationery-sales-section,
+.admin-stationery-portal .stationery-customer-section,
+.admin-stationery-portal .stationery-history-section {
+  margin-top: 24px;
+}
+
+.admin-stationery-portal .stationery-sales-heading h4,
+.admin-stationery-portal .stationery-customer-section h4,
+.admin-stationery-portal .stationery-history-section h4 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.admin-stationery-portal .stationery-sales-heading p {
+  margin: 4px 0 18px;
+  color: #64748b;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.admin-stationery-portal .stationery-sales-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.admin-stationery-portal .stationery-sales-card {
+  min-height: 116px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #dbe3ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.admin-stationery-portal .stationery-sales-card span {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+.admin-stationery-portal .stationery-sales-card strong {
+  margin-top: 10px;
+  color: #0f172a;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.admin-stationery-portal .stationery-sales-loading {
+  padding: 24px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  color: #64748b;
+  font-weight: 800;
+  text-align: center;
+}
+
+.admin-stationery-portal .stationery-empty-panel {
+  margin-top: 12px;
+  padding: 28px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  color: #64748b;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.admin-stationery-portal .stationery-customer-list,
+.admin-stationery-portal .stationery-history-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-stationery-portal .stationery-customer-row,
+.admin-stationery-portal .stationery-history-row {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #dbe3ef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.admin-stationery-portal .stationery-customer-row strong,
+.admin-stationery-portal .stationery-history-row strong {
+  display: block;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.admin-stationery-portal .stationery-customer-row span,
+.admin-stationery-portal .stationery-history-row span {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .admin-stationery-portal .stationery-sales-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-stationery-portal .stationery-sales-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-stationery-portal .stationery-customer-row,
+  .admin-stationery-portal .stationery-history-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.admin-stationery-portal .btn-primary-premium { /* cở chữ của nút thêm văn phòng phẩm mới*/
+  font-size: 17px;
+}
+.action-col {
+  min-width: 170px;
+  width: 170px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.action-btn {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.action-btn i {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.view-btn,
+.edit-btn {
+  background: #eef0ff;
+  color: #4f46e5;
+}
+
+.delete-btn {
+  background: #fff1f2;
+  color: #e11d48;
+}
+
+.action-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.85;
+}
+
+.admin-stationery-portal {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.admin-stationery-portal .portal-title {
+  margin-top: 0 !important;
+}
+
+.stationery-table-card {
+  margin-top: 0 !important;
+}
+
+/* ================= PAGINATION MODERN ================= */
+.admin-stationery-portal .pagination-container {
+  padding: 1.25rem 2rem;
+  background: #ffffff;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-stationery-portal .pagination-info {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.admin-stationery-portal .pagination-nav {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.admin-stationery-portal .pagination-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #f1f5f9;
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 800;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.admin-stationery-portal .pagination-btn:hover:not(:disabled) {
+  background: #ffffff;
+  color: #6366f1;
+  border-color: #6366f1;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.12);
+}
+
+.admin-stationery-portal .pagination-btn.active {
+  background: #6366f1;
+  color: #ffffff;
+  border-color: #6366f1;
+  box-shadow: 0 6px 14px rgba(99, 102, 241, 0.24);
+}
+
+.admin-stationery-portal .pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f8fafc;
+  color: #cbd5e1;
+}

@@ -1,0 +1,641 @@
+/* ================= COMMON STAFF UI FOR SHIFT PAGE ================= */
+
+.staff-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.staff-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.staff-grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.staff-grid--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.staff-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  padding: 22px;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+}
+
+.staff-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.staff-card__header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.staff-stat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.staff-stat__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.staff-stat p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.staff-stat h3 {
+  margin: 6px 0 4px;
+  font-size: 24px;
+}
+
+.staff-alert {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+}
+
+.staff-alert strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.staff-alert p {
+  margin: 0;
+  color: #475569;
+}
+
+.staff-alert--warning {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+
+.staff-alert--success {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.staff-input {
+  width: 100%;
+  border: 1px solid #dbe3ef;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  background: #ffffff;
+}
+
+.staff-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.staff-btn {
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: inherit;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.staff-btn--primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.staff-btn--primary:hover {
+  background: #1d4ed8;
+}
+
+.staff-btn--outline {
+  background: #ffffff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+}
+
+.staff-btn--outline:hover {
+  background: #eff6ff;
+}
+
+.staff-btn--danger {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.staff-btn--danger:hover {
+  background: #b91c1c;
+}
+
+.staff-btn--danger-light {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.staff-btn--small {
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.staff-btn--full {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.staff-form,
+.staff-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.staff-form {
+  gap: 16px;
+}
+
+.staff-form-group label {
+  color: #334155;
+  font-weight: 700;
+}
+
+.staff-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.staff-table th {
+  text-align: left;
+  padding: 14px 12px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.staff-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #eef2f7;
+  vertical-align: middle;
+}
+
+.staff-empty {
+  padding: 28px;
+  text-align: center;
+  color: #64748b;
+}
+
+.staff-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.staff-badge--success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.staff-badge--danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.staff-payment__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px 0;
+  border-top: 1px solid #eef2f7;
+  border-bottom: 1px solid #eef2f7;
+  margin: 18px 0;
+}
+
+.staff-payment__summary > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.staff-payment__total {
+  padding-top: 14px;
+  border-top: 1px solid #eef2f7;
+}
+
+.staff-stats-compact {
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.staff-stats-compact .staff-card {
+  padding: 14px 18px;
+  border-radius: 16px;
+}
+
+.staff-stats-compact .staff-stat {
+  min-height: 82px;
+  gap: 12px;
+}
+
+.staff-stats-compact .staff-stat__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.staff-stats-compact .staff-stat p {
+  font-size: 13px;
+}
+
+.staff-stats-compact .staff-stat h3 {
+  font-size: 20px;
+  margin: 3px 0 0;
+}
+/* ================= STAFF SHIFT PAGE ================= */
+
+.staff-shift-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 48px;
+}
+
+/* 4 thẻ thống kê */
+.staff-shift-page .staff-stats-compact {
+  margin-bottom: 0;
+}
+
+/* ================= SHIFT TOAST ================= */
+
+.staff-shift-toast {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 9999;
+  min-width: 320px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  animation: shiftFadeIn 0.25s ease;
+}
+
+/* ================= SHIFT TABS ================= */
+
+.shift-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.shift-tab-btn {
+  padding: 10px 22px;
+  border-radius: 14px;
+  border: 1.5px solid #dbe3ef;
+  background: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  color: #64748b;
+  transition: 0.2s ease;
+}
+
+.shift-tab-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.shift-tab-btn.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.22);
+}
+
+/* ================= SHIFT LOADING ================= */
+
+.staff-shift-loading-card {
+  text-align: center;
+  padding: 40px;
+}
+
+.staff-shift-loading-text {
+  margin-top: 12px;
+  color: #64748b;
+}
+
+.shift-spinner {
+  width: 44px;
+  height: 44px;
+  border: 4px solid #e5e7eb;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: shiftSpin 0.8s linear infinite;
+  margin: 0 auto;
+}
+
+/* ================= OPEN SHIFT CARD ================= */
+
+.shift-open-card {
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #e5e7eb;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.shift-open-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.shift-open-card h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.shift-open-card p {
+  color: #64748b;
+  margin: 0 0 28px;
+}
+
+.shift-open-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+/* ================= SHIFT STAT COLORS ================= */
+
+.staff-shift-icon--success {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.staff-shift-icon--warning {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.staff-shift-icon--primary {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.staff-shift-value--success {
+  color: #16a34a;
+}
+
+.staff-shift-value--warning {
+  color: #b45309;
+}
+
+.staff-shift-value--primary {
+  color: #2563eb;
+}
+
+/* ================= SHIFT INFO ================= */
+
+.staff-shift-card-subtitle {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* Ensure the two cards in the shift info grid are visually equal */
+.staff-shift-info-grid {
+  align-items: stretch; /* grid children stretch to same height */
+}
+
+.staff-shift-info-grid {
+  /* make grid children share the available row height so columns match */
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+
+.staff-shift-info-grid .staff-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* keep header/content at top and actions at bottom */
+  height: 100%;
+  min-height: 0; /* allow flex children to shrink properly inside the grid cell */
+}
+
+.staff-shift-summary-income {
+  color: #16a34a;
+}
+
+.staff-shift-summary-expense {
+  color: #dc2626;
+}
+
+.staff-shift-summary-total {
+  color: #2563eb;
+  font-size: 24px;
+}
+
+.staff-shift-action-btn {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.staff-shift-action-btn + .staff-shift-action-btn {
+  margin-top: 8px;
+}
+
+/* ================= TRANSACTION FORM ================= */
+
+.shift-tx-type-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+/* Make the two type buttons exactly equal and fill their cells */
+.shift-tx-type-row .shift-tx-type-btn {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.shift-tx-type-btn {
+  padding: 12px;
+  border-radius: 14px;
+  border: 2px solid #e5e7eb;
+  background: #f8fafc;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  color: #64748b;
+  transition: 0.2s ease;
+}
+
+.shift-tx-type-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.shift-tx-type-btn.active-income {
+  border-color: #16a34a;
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.shift-tx-type-btn.active-expense {
+  border-color: #dc2626;
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* ================= TRANSACTION TABLE ================= */
+
+.staff-shift-table-index,
+.staff-shift-table-date {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.staff-shift-table-index {
+  color: #94a3b8;
+}
+
+.staff-shift-amount-income {
+  color: #16a34a;
+}
+
+.staff-shift-amount-expense {
+  color: #dc2626;
+}
+
+/* ================= SHIFT SUMMARY ROW ================= */
+
+.shift-summary-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 0 0;
+  border-top: 1px solid #eef2f7;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.shift-summary-row strong {
+  font-weight: 900;
+}
+
+/* ================= HISTORY TABLE ================= */
+
+.staff-shift-history-date {
+  font-size: 13px;
+}
+
+.staff-shift-history-income {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.staff-shift-history-expense {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes shiftFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shiftSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+  .staff-shift-page {
+    gap: 0;
+  }
+  .shift-summary-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shift-tabs {
+    flex-direction: column;
+  }
+
+  .shift-tab-btn {
+    width: 100%;
+  }
+
+  .shift-open-card {
+    padding: 32px 24px;
+  }
+
+  .shift-tx-type-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .staff-shift-toast {
+    left: 16px;
+    right: 16px;
+    min-width: 0;
+  }
+
+  .shift-open-card {
+    padding: 28px 20px;
+  }
+}
+.staff-shift-action-btn--small-gap {
+  margin-top: 10px;
+}

@@ -1,0 +1,317 @@
+/* =========================
+   ADMIN REPORTS STYLES
+========================= */
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   GLOBAL CARD
+========================= */
+
+.card {
+  transition: all 0.25s ease;
+  border: none !important;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08) !important;
+}
+
+.card-header {
+  background: #fff !important;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+.btn-light {
+  background: #fff;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #e9ecef;
+  white-space: nowrap;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: rgba(37, 99, 235, 0.04);
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress {
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.progress-bar {
+  transition: width 0.4s ease;
+}
+
+/* =========================
+   CHART COLUMN ANIMATION
+========================= */
+
+.bg-primary,
+.bg-warning {
+  transition: all 0.25s ease;
+}
+
+.bg-primary:hover,
+.bg-warning:hover {
+  opacity: 1 !important;
+  transform: scaleY(1.04);
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-content {
+  border: none;
+  overflow: hidden;
+  animation: modalFade 0.25s ease;
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: 1px solid #f1f5f9;
+}
+
+/* =========================
+   ICON BOX
+========================= */
+
+.rounded-4 i {
+  line-height: 1;
+}
+
+/* =========================
+   FINANCE SUMMARY
+========================= */
+
+.finance-card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .card-body {
+    padding: 1.25rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody tr {
+    display: block;
+    background: #fff;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+  }
+
+  .table tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 0.6rem 0;
+  }
+
+  .table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #64748b;
+    margin-right: 1rem;
+  }
+
+  .table tbody td:last-child {
+    justify-content: flex-end;
+  }
+}
+
+/* =========================
+   CUSTOM SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+/* =========================
+   SOFT GLASS EFFECT
+========================= */
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* =========================
+   LOADING STATE
+========================= */
+
+.loading-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  border-radius: inherit;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-state-icon {
+  opacity: 0.7;
+}
+
+.empty-state-icon i {
+  font-size: 4rem;
+}
+
+/* =========================
+   STATISTIC CARDS
+========================= */
+
+.stat-card h3 {
+  color: #0f172a;
+  font-size: 1.8rem;
+}
+
+.stat-card .badge {
+  font-size: 0.78rem;
+}
+
+/* =========================
+   REPORT ACTIONS
+========================= */
+
+.report-actions .btn {
+  min-width: 42px;
+}
+
+/* =========================
+   SHADOW UTILITIES
+========================= */
+
+.shadow-soft {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.1);
+}

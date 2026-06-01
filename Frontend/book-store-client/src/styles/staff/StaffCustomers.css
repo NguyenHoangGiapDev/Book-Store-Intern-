@@ -1,0 +1,406 @@
+/* ================= STAFF CUSTOMERS PAGE ================= */
+
+.staff-customers-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 48px;
+}
+
+/* Giống trang quản lý sản phẩm */
+.staff-customers-page .staff-stats-compact {
+  margin-bottom: 0;
+}
+
+/* Khối nội dung ngay dưới 4 thẻ */
+.staff-customers-page .staff-stats-compact + .staff-grid,
+.staff-customers-page .staff-stats-compact + .staff-grid--2,
+.staff-customers-page .staff-stats-compact + .staff-customers-content {
+  margin-top: 0;
+}
+/* ================= CUSTOMER FORM / NOTE ================= */
+
+/* Hai thẻ bằng chiều cao nhau */
+.staff-customers-page .staff-grid--2 {
+  align-items: stretch;
+}
+
+.staff-customer-form-card,
+.staff-customer-note-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Form chiếm hết chiều cao còn lại của thẻ */
+.staff-customer-form-card .staff-customer-form {
+  flex: 1;
+}
+
+/* Thẻ quyền nhân viên: nội dung trải đều từ trên xuống dưới */
+.staff-customer-note-card > .staff-alert--info {
+  flex-shrink: 0;
+}
+
+.staff-customer-note-card .staff-customer-rank-box {
+  flex: 1;
+}
+
+.staff-customers-card {
+  overflow: hidden;
+}
+
+.staff-customer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.staff-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.staff-customer-rank-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.staff-customer-rank-box > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.staff-customer-rank-box p {
+  margin: 0;
+  color: #64748b;
+  font-weight: 700;
+}
+
+/* ================= CUSTOMER TOOLBAR ================= */
+
+.staff-customers-toolbar {
+  display: grid;
+  /* Make the three controls (search input, filter select, refresh button) equal width */
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  align-items: center;
+  gap: 12px;
+}
+
+/* Ensure the input, select and refresh button fill their grid cell to appear equal */
+.staff-customers-toolbar > input.staff-input,
+.staff-customers-toolbar > select.staff-input,
+.staff-customers-toolbar > button.staff-btn {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Wrapper for select with optional clear (×) button */
+.staff-select-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center; /* align children vertically */
+}
+
+.staff-select-wrap select.staff-input {
+  padding-right: 64px; /* extra space for clear button and caret */
+}
+
+.staff-select-clear {
+  position: absolute;
+  right: 36px; /* horizontal offset from right edge */
+  top: 0;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  color: #475569;
+  padding: 4px;
+}
+
+.staff-select-wrap.has-clear .staff-select-clear {
+  display: inline-flex;
+}
+
+.staff-select-clear:focus {
+  outline: none;
+}
+
+/* ================= CUSTOMER TABLE ================= */
+
+.staff-customers-table th,
+.staff-customers-table td {
+  vertical-align: middle;
+}
+
+.staff-customers-index-head {
+  width: 52px;
+  text-align: center;
+}
+
+.staff-customers-index {
+  text-align: center;
+  font-weight: 700;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.staff-customer-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.staff-customer-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  flex-shrink: 0;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.22);
+}
+
+.staff-customer-cell strong {
+  display: block;
+  color: #0f172a;
+}
+
+/* Remove bold appearance inside the customers table: make <strong> and <b> render normal weight */
+.staff-customers-table td strong,
+.staff-customers-table th strong,
+.staff-customers-table td b,
+.staff-customers-table th b,
+.staff-customer-cell strong {
+  font-weight: 400; /* normal */
+}
+
+/* Ensure index/number cells are not bold */
+.staff-customers-table td {
+  font-weight: 400;
+}
+
+.staff-customer-cell p,
+.staff-customers-table td p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* Make the "Địa chỉ" (4th) column wider and allow long addresses to wrap */
+.staff-customers-table th:nth-child(4),
+.staff-customers-table td:nth-child(4) {
+  min-width: 260px; /* increase minimum width for address column */
+  max-width: 480px;
+  white-space: normal; /* allow wrapping */
+  word-break: break-word;
+}
+
+/* Actions cell: move the 3 buttons up a bit so they align visually with the row content */
+.staff-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  transform: translateY(-6px); /* nudge up slightly */
+}
+
+@media (max-width: 900px) {
+  /* On narrower screens, remove the upward offset so layout stays natural */
+  .staff-actions {
+    transform: none;
+  }
+}
+
+/* ================= CUSTOMER PAGINATION ================= */
+
+.staff-customers-pagination-footer {
+  margin-top: 16px;
+  padding: 16px 0 0;
+  border-top: 1px solid #eef2f7;
+  background: #ffffff;
+}
+
+.staff-customers-pagination-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.staff-customers-pagination-info {
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.staff-customers-pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.staff-customers-page-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.staff-customers-page-size-label {
+  font-size: 12px;
+  color: #334155;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.staff-customers-page-size-select {
+  width: 75px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  border: 1px solid #e2e8f0;
+  padding: 4px 8px;
+  cursor: pointer;
+  background: #ffffff;
+  outline: none;
+}
+
+.staff-customers-pagination-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.staff-customers-page-btn {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff-customers-page-btn:hover {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.staff-customers-page-btn.is-active {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+.staff-customers-page-btn.is-disabled {
+  color: #cbd5e1;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.staff-customers-pagination-dots {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  color: #94a3b8;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* ================= CUSTOMER MODAL ================= */
+
+.staff-customer-modal {
+  max-width: 620px;
+}
+
+.staff-customer-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+  border: 1px solid #dbeafe;
+}
+
+.staff-customer-profile__avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.staff-customer-profile h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+  .staff-customers-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .staff-customers-toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .staff-customers-pagination-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .staff-customers-pagination-controls {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .staff-customer-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
